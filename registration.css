@@ -1,0 +1,54 @@
+/*Subscription */
+
+#inscription {
+    margin-top: 20px;
+    max-width: 760px;
+    background-color: white;
+    border: solid 1px rgb(172, 26, 29);
+    background-image: url("images/inscriptionFond.png");
+    background-repeat: no-repeat;
+    position: relative;
+    height: 30px;
+    background-position: right center;
+    margin-left: 10px;
+}
+#frm-subscriptionFront {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+.screen-reader-response {
+    display: none;
+}
+#emailInputTextBox {
+    width: 500px;
+    border: none;
+    background-color: transparent;
+    height: 28px;
+    line-height: 32px;
+    font-size: 24px;
+    padding-left: 10px;
+}
+#frm-subscriptionFront table tbody tr td {
+    width: 100%;
+}
+.subscribeButton {
+    position: absolute;
+    height: 30px;
+    font-size: 22px;
+    right: 0px;
+    top: 0px;
+    border: none;
+    background-color: #c12224;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding-right: 9px;
+}
+
+@media (max-width: 780px) {
+    #inscription {
+        width: 95%;
+        margin-top: 50px;
+    }
+}

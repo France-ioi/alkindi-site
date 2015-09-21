@@ -1,0 +1,124 @@
+#redBand {
+    height: 30px;
+    width: 100%;
+    background-color: rgb(172, 26, 29);
+}
+#contenerHeader {
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+#header {
+    background-color: white;
+    min-height: 150px;
+    box-shadow: 0px 1px 5px #888888;
+}
+#wrappHeader {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+#branding {
+    min-height: 90px;
+    padding-top: 10px;
+    background-image: url("images/logo.png");
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: 90px 90px;
+}
+#site-title {
+    font-size: 30px;
+    max-width: 460px;
+    word-spacing: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 40px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+#menu {
+    font-size: 14px;
+}
+#menu ul {
+    text-align: center;
+	list-style: none;
+}
+#menu ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    width: 24%;
+    padding-bottom: 10px;
+}
+#menu-icon-mobile {
+    display: none;
+}
+.current-menu-item a {
+    font-size: 18px;
+    color: #AC1A1D;
+}
+
+@media (max-width: 640px) {
+    /*header*/
+    
+	/*
+    #branding {
+        background-image: none;
+    }
+    #site-title a {
+        color: white;
+    }
+    #site-title {
+        margin-top: -50px;
+        font-size: 25px;
+        max-width: 260px;
+        margin-left: 80px;
+        text-align: bottom;
+        word-spacing: normal;
+        padding-top: 5px;
+        text-transform: none;
+    }
+	
+	#menu ul {
+        text-align: center;
+    }
+    #menu ul li {
+        display: inline-block;
+        text-transform: uppercase;
+        width: 100%;
+        height: 50px;
+    }
+    #contenerHeader {
+        display: block;
+        left: 0px;
+        height: 75px;
+        background-position: center left;
+        background-size: 60px;
+    }
+    #redBand {
+        box-shadow: 0px 3px 5px #888888;
+        height: 45px;
+    }
+	*/
+    #header {
+        background-color: white;
+        min-height: 50px;
+    }
+}
+
+/*
+@media (max-width: 640px) {
+    #menu-icon-mobile {
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: none;
+    }
+}
+*/

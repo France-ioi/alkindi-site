@@ -1,0 +1,607 @@
+/*
+Theme Name: alkindi-project
+Theme URI: http://#/
+Author URI: http://www.colombbus.org/
+Description:none
+License:none
+License URI: none
+Tags:none
+Author: Colombbus team
+Version : 1.0
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+/*h1,h2,h3,h4,h5,h6,*/
+
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    font-size: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    vertical-align: baseline
+}
+body {
+    line-height: 1.4
+}
+ol,
+ul {
+	margin-left: 20px;
+}
+blockquote,
+q {
+    quotes: none
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+.clear {
+    clear: both
+}
+.sticky {}.bypostauthor {}.wp-caption {}.wp-caption-text {}.gallery-caption {}
+/* =WordPress Core
+-------------------------------------------------------------- */
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%;
+    /* Image does not overflow the content area */
+    
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+.alignleft {
+    display: inline;
+    float: left;
+    padding-right: 15px;
+}
+.alignright {
+    display: inline;
+    float: right;
+    padding-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* General Style */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("images/AccueilBG.png");
+    background-position: bottom center;
+    background-color: #f0ede9;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: "Varela Round";
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+#wrapper {
+    position: relative;
+}
+
+#container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+/* Content Manuel */
+
+#contenuManuel {
+    margin-top: 20px;
+    min-width: 820px;
+    margin-right: 20px;
+}
+#contenuManuel h2 {
+    margin-top: 20px;
+}
+
+/* Content quiSommeNous.php */
+
+#contenuQSN h2 {
+    font-size: 24px;
+    color: #AC1A1D;
+    padding-left: 52px;
+    background-image: url("images/arabesquecarre.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+#contenuQSN {
+    margin-top: 20px;
+    min-width: 580px;
+    margin-right: 230px;
+}
+#contenuQSN ul {
+    list-style-type: circle;
+}
+#contenuQSN ol {
+    list-style-type: upper-roman;
+}
+#contenuQSN p {
+    margin-bottom: 5px;
+}
+.firstchamp {
+    margin-top: 20px;
+    min-width: 820px;
+    min-height: 560px;
+    margin-right: 20px;
+}
+
+/* Main page content */
+
+#content a {
+    color: #ac1a1d;
+    text-decoration: underline;
+}
+.firstchamp h1 {
+    font-size: 48px;
+}
+.firstchamp p {
+    margin-top: 10px;
+}
+#sidebar {
+    min-height: 470px;
+}
+#sidebarcontainer {
+    margin-top: 60px;
+    width: 220px;
+    float: right;
+    clear: both;
+    margin-left: 20px;
+}
+#third {
+    width: 100%;
+    min-height: 450px;
+    margin-top: 160px;
+}
+#forth {
+    width: 100%;
+    min-height: 700px;
+    margin-top: 20px;
+}
+#fifth {
+    width: 100%;
+    min-height: 600px;
+    margin-top: 20px;
+}
+.arabesqueTitle {
+    width: 100%;
+    height: 195px;
+    background-image: url("images/arabesque.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 36px;
+    color: rgb(172, 26, 29);
+    text-align: center;
+    line-height: 190px;
+}
+.arabesqueSubTitle {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+.arabesqueSubTitle p {
+    line-height: 50px;
+}
+.blocObjectifs {
+    margin-top: 20px;
+}
+.blocQuiPeut {
+    width: 47%;
+    padding-bottom: 20px;
+    float: left;
+}
+.blocQuiPeutDroit {
+    margin-left: 40px;
+}
+.quiPeutTitre {
+    font-size: 24px;
+    color: rgb(172, 26, 29);
+    background-image: url("images/arabesquecarre.png");
+    background-repeat: no-repeat;
+    height: 50px;
+}
+.quiPeutTitreGauche {
+    padding-left: 52px;
+    text-align: left;
+    background-position: left;
+}
+.quiPeutTitreDroit {
+    padding-right: 52px;
+    text-align: right;
+    background-position: right;
+}
+.quiPeutTexte {
+    margin-top: 10px;
+    text-align: justify;
+}
+#titleThird {
+    height: 100px;
+    width: 12%;
+    background-image: url("images/soudroite.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    text-align: right;
+    vertical-align: middle;
+    color: #AC1A1D;
+    font-size: 30px;
+    padding-right: 5%;
+    display: table-cell;
+}
+#plancheThird {
+    height: 350px;
+    width: 250px;
+    float: left;
+    margin-top: 10px;
+}
+#plancheThird img {
+    width: 100%;
+}
+#textThird {
+    min-height: 350px;
+    text-align: justify;
+    margin-left: 250px;
+    padding-left: 30px;
+    margin-top: 10px;
+    width: auto;
+}
+#titreActu {
+    width: 100%;
+    font-size: 30px;
+    color: rgb(172, 26, 29);
+    padding-top: 20px;
+    text-align: right;
+}
+/* Sidebar */
+
+.xoxo {
+    margin-top: 20px;
+    text-align: right;
+}
+.xoxo h3 {
+    font-size: 24px;
+    color: rgb(172, 26, 29);
+}
+#counterBlock {
+    text-align: center;
+    clear: both;
+    background-color: #AC1A1D;
+    color: #fff;
+    padding-bottom: 8px;
+}
+#compte_a_rebours {
+    text-align: center;
+    font-size: 36px;
+    padding: 5px;
+    color: white;
+}
+.required label {
+    display: none;
+}
+
+/* Footer */
+
+#footer {
+    height: 100px;
+    background-color: rgb(172, 26, 29);
+}
+#copyright {
+    text-align: center;
+    padding-top: 50px;
+}
+/*other*/
+
+#social-network {
+    width: 100px;
+    float: right;
+}
+#page-title {
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 48px;
+    color: #AC1A1D;
+}
+#click-menu {
+    background-color: transparent;
+}
+#divBottomRight {
+    position: absolute;
+    z-index: 10000;
+    min-width: 142px;
+}
+#divBottomRight img,
+#acurax_si_simple img,
+#short_code_si_icon img {
+    margin-left: 1px;
+    border: 0px !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+#divBottomRight img:hover,
+#acurax_si_simple img:hover,
+#short_code_si_icon img:hover {
+    opacity: 0.8;
+}
+/* Starting Styles For Social Media Icon From Acurax International www.acurax.com */
+#divBottomRight img 
+{
+   width: 40px; 
+}
+#divBottomRight 
+{
+   min-width:0px; 
+   position: static; 
+}
+/* Ending Styles For Social Media Icon From Acurax International www.acurax.com */
+
+/*Responsive Media Queries, 780px */
+
+@media (max-width: 780px) {
+    /*Main content*/    
+    .firstchamp {
+        width: 100%;
+        min-width: initial;
+    }
+    #contenuQSN {
+        min-width: initial;
+    }
+    #plancheThird {
+        display: none;
+    }
+    #textThird {
+        width: 100%;
+        margin-left: 0px;
+        padding: 0px;
+    }
+    #titreActu {
+        text-align: center;
+    }
+    .blocQuiPeut {
+        width: 100%;
+        float: none;
+    }
+    .blocQuiPeutDroit {
+        margin-left: 0px;
+    }
+
+    /*sidebar*/
+    
+    #sidebar {
+        margin-top: 10px;
+        clear: both;
+        width: 100%;
+        float: none;
+    }
+    .xoxo {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+/*Responsive Media Queries, 640px */
+
+@media (max-width: 640px) {
+    /*Main content*/
+    
+    .arabesqueTitle {
+        font-size: 26px;
+    }
+    #contenuQSN {
+        width: 100%;
+    }
+    #third {
+        margin-top: 0px;
+    }
+    #mobileWrapper {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /*Sidebar*/
+    
+    #sidebarcontainer {
+        display: none;
+    }
+    /*subscription*/
+    
+    #emailInputTextBox {
+        font-size: 20px;
+        width: 100%;
+    }
+}
+
+#pageDiscover, #pageManual, #pageWhoAreWe {
+	display: none;
+}
