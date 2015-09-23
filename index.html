@@ -13,343 +13,340 @@
    <script type="text/javascript" SRC="functions.js"></script>
 </head>
 <body class="home page page-id-2 page-template-default">
-   <div id="wrapper" class="hfeed">
-      <header id="header" role="banner">
-         <div id="redBand">
-         </div>
-         <div id="wrappHeader">
-            <section id="branding">
-               <div id="site-title">
-                  <a href="#" title="Concours Alkindi" rel="home">
-                     <div id="contenerHeader"></div>
-                     Concours Alkindi
-                  </a>
-               </div>
-            </section>
-            <nav id="menu" role="navigation">
-               <div class="menu">
-                  <ul>
-                     <li class="current-menu-item" id="linkMain">
-                        <a href="#" onclick="loadPage('Main')">Accueil</a>
-                     </li>
-                     <li id="linkDiscover">
-                        <a href="#" onclick="loadPage('Discover')">Découvrir la cryptanalyse</a>
-                     </li>
-                     <li id="linkManual">
-                        <a href="#" onclick="loadPage('Manual')">Manuel du concours</a>
-                     </li>
-                     <li id="linkWhoAreWe">
-                        <a href="#" onclick="loadPage('WhoAreWe')">Qui sommes-nous</a>
-                     </li>
-                  </ul>
-               </div>
-            </nav>
-         </div>
-      </header>
-      <div id="container">
-         <section id="content" role="main">
-            <article id="post-2" class="post-2 page type-page status-publish has-post-thumbnail hentry">
-               <section class="entry-content">
-                  <div id="bannierManga">
-                     <img width="100%" src="images/bani.png"> 
-                     <div id="accroche">
-                        <h1 id="textAccroche">À TOI DE DÉCRYPTER LE CODE</h1>
-                     </div>
-                     <div id="social-network">
-                        <div id="short_code_si_icon" style="text-align:center;">
-                           <a href="https://www.facebook.com/concours-alkindi" target="_blank" title="Suivez-nous sur Facebook">
-                              <img src="images/facebook.png" style="border:0px;" alt="Suivez-nous sur Facebook" height="40px" width="40px">
-                           </a>
-                           <a href="http://www.twitter.com/ConcoursAlKindi" target="_blank" title="Suivez-nous sur Twitter">
-                              <img src="images/twitter.png" style="border:0px;" alt="Suivez-nous sur Twitter" height="40px" width="40px">
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div id="sidebarcontainer">
-                     <aside id="sidebar" role="complementary">
-                        <div id="primary" class="widget-area">
-                           <div id="titreActu">Actualités</div>
-                           <div class="xoxo">
-                                <h3 class="widget-title">-28/08- </h3>
-                                <div class="textwidget">
-                                    <p>L'aventure commence le 30 novembre. Saurez-vous relever le défi ?</p>
-                                </div>
-                           </div>
-                        </div>
-                     </aside>
-                     <!-- Timer script -->
-                     <div id="counterBlock">
-                        <div id="compte_a_rebours">77 jours</div>
-                        <p>avant la première épreuve</p>
-                     </div>
-                     <script type="text/javascript" src="rebours.js"></script>
-                  </div>
-
-                  <div id="inscription">
-                     <div class="widgetGuts shortcode">
-                        <form action="" method="post" onsubmit="return false" "id="frm-subscriptionFront" novalidate>
-                           <table>
-                              <tbody>
-                                 <tr class="required">
-                                    <td>
-                                       <input
-                                          type="text"
-                                          name="email"
-                                          onfocus="if (this.value == &#39;Entre ton adresse Email !&#39;) {this.value = &#39;&#39;;}"
-                                          onblur="if (this.value == &#39;&#39;) {this.value = &#39;Entre ton adresse Email !&#39;;}"
-                                          id="emailInputTextBox"
-                                          required=""
-                                          data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;Une adresse email est requise.&quot;},{&quot;op&quot;:&quot;:email&quot;,&quot;msg&quot;:&quot;Votre adresse mail doit être valide.&quot;}]"
-                                          value="Entre ton adresse Email !"
-                                          class="text">
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td><input type="submit" onclick="saveEmail()" class="subscribeButton button" value="Inscris-toi"></td>
-                                 </tr>
-                              </tbody>
-                           </table>
-                           <div id="SubscriptionResultMessage">
-                     <!-- here will be the answer of the server for email inscription -->
-                           </div>
-                        </form>
-                     </div>
-                  </div>
-
-
-                  <div id="mobileWrapper">
-                     <div id="pageMain" class="pageContent">
-                        <div class="firstchamp">
-                           <h1 id="page-title">Alkindi, c’est quoi ?</h1>
-                           <p>&nbsp;</p>
-                           <p style="text-align: justify;">
-                              Alkindi&nbsp;est une nouvelle compétition qui porte sur la cryptanalyse : l’art de déchiffrer les codes secrets.
-                              <br>
-                              C’est un concours qui s’adresse à tous les élèves de seconde.
-                           </p>
-                           <p style="text-align: justify;">
-                              Le concours comporte quatre tours :
-                           </p>
-                           <p style="text-align: justify;">
-                              – Le premier tour est une épreuve de 45 minutes sur ordinateur, à laquelle on peut participer seul ou par binôme. Il s’agit d’une série de problèmes interactifs. Chaque problème existe en version facile, intermédiaire et difficile. Tout problème résolu débloque de nouveaux énoncés. Plus on répond à des questions, plus on marque des points.
-                           </p>
-                           <p style="text-align: justify;">
-                              – Les trois tours suivants ont une forme différente. Ce sont des épreuves en temps long (1 à 3 semaines) auxquelles on participe par équipe de 1 à 4 personnes. À chaque tour, il faut déchiffrer un nouveau message secret.
-                           </p>
-                           <p style="text-align: justify;">
-                              – Après chaque tour, un classement est effectué et les 50 % équipes les mieux classées sont sélectionnées pour participer au tour suivant.
-                           </p>
-                           <p style="text-align: justify;">
-                              La participation au concours est entièrement gratuite.
-                           </p>
-                        </div>
-
-                        <div id="third">
-                           <h1 id="titleThird">Objectifs</h1>
-                           <div id="plancheThird">
-                              <img src="images/Planches.png">
-                           </div>
-                           <div id="textThird">
-                              <p>
-                                 Aujourd’hui, les questions de sécurité des données sont un des enjeux majeur de notre société, que ce soit pour protéger les transactions bancaires ou garantir la protection de la vie privée. Tout cela est rendu possible grâce aux mathématiques et à l’informatique.
-                                 <br>
-                                 Nous souhaitons faire découvrir aux lycéens cette application très concrète des mathématiques, qui joue un rôle énorme dans leur vie quotidienne. Nous voulons leur montrer qu’il est possible de prendre du plaisir en faisant des mathématiques. Enfin, nous souhaitons les sensibiliser à la question importante de la
-                                 <br>
-                                 sécurité de l’information.
-                              </p>
-                              <p>&nbsp;</p>
-                              <p>Ce concours rentre dans le cadre de la Stratégie mathématiques et du plan École numérique du Ministère de l’Éducation nationale.</p>
-                           </div>
-                        </div>
-
-                        <div id="forth">
-                           <div class="arabesqueTitle">
-                              Qui peut participer ?
-                           </div>
-                           <div class="arabesqueSubTitle">
-                              Tous les élèves scolarisés en seconde dans un<br>
-                              établissement français peuvent participer à la<br>
-                              compétition.
-                           </div>
-                           <div class="blocObjectifs">
-                              <div class="blocQuiPeut">
-                                 <div class="quiPeutTitre quiPeutTitreGauche">
-                                    Je n'ai jamais fait de crypto. C'est grave ?
-                                 </div>
-                                 <div class="quiPeutTexte">
-                                    Pas du tout. Au contraire, c’est le principe ! Ce concours s’adresse à des gens qui n’ont jamais fait de cryptanalyse. Lors de l’épreuve en temps limité, toutes les informations nécessaires seront contenues dans le sujet.
-                                 </div>
-                              </div>
-                              <div class="blocQuiPeut blocQuiPeutDroit">
-                                 <div class="quiPeutTitre quiPeutTitreDroit">
-                                    Est ce que c'est difficile ?
-                                 </div>
-                                 <div class="quiPeutTexte">
-                                    Le concours est accessible pour tous les élèves de seconde. Lors de la première épreuve, ouverte à tous, chaque question comporte trois niveaux de difficulté. Ainsi, chaque participant peut s’amuser à résoudre des défis adaptés à son niveau. La difficulté augmente lors des tours suivants
-                                 </div>
-                              </div>
-                              <div class="blocQuiPeut">
-                                 <div class="quiPeutTitre quiPeutTitreGauche">
-                                    Mais il faut quand même  être bon en maths ?
-                                 </div>
-                                 <div class="quiPeutTexte">
-                                    Pas nécessairement. Si vous avez réussi le brevet c’est que vous avez un niveau en mathématiques suffisant pour pouvoir répondre aux questions.
-                                 </div>
-                              </div>
-                              <div class="blocQuiPeut blocQuiPeutDroit">
-                                 <div class="quiPeutTitre quiPeutTitreDroit">
-                                    Mais alors qu’est-ce qu’il  faut savoir ?
-                                 </div>
-                                 <div class="quiPeutTexte">
-                                    Il n’y a pas de prérequis autres que le programme de collège. Venez avec l’esprit ouvert, faites preuve de logique et suivez les consignes. Et surtout amusez vous ! 
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-
-
-                        <div id="fifth">
-                           <div class="arabesqueTitle">
-                              Qu'est ce qu’on gagne
-                           </div>
-                           <div class="arabesqueSubTitle">
-                              <p>
-                                 La première équipe se verra offrir un ordinateur portable par personne. Les seconds gagneront des tablettes tactiles, les troisièmes des smartphones.
-                              </p>
-                              <p>
-                                 Les membres des 25 meilleures équipes nationales ainsi que de la meilleure équipe de chaque académie gagneront des livres de cryptographie.
-                              </p>
-                              <p>
-                                 Les équipes gagnantes seront conviées à une cérémonie officielle de remise des prix à Paris.
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-
-                     <div id="pageDiscover" class="pageContent">
-                        <div class="firstchamp">
-                           <h1 id="page-title">Découvrir la cryptanalyse</h1>
-                              <p>
-                                 Pour découvrir la crypatnalyse, nous vous proposons un document d’<a target="new" href="docs/intro_crypto.pdf">introduction à la Cryptanalyse</a>.
-                              </p>
-                              <p>Par ailleurs, pour poursuivre votre dévcouverte, nous vous proposons les sites suivants :</p>
-                              <p>
-                                 <a href="http://www.dcode.fr" target="_blank">http://www.dcode.fr</a>
-                                 <br>
-                                 <a href="http://www.apprendre-en-ligne.net/crypto" target="_blank">http://www.apprendre-en-ligne.net/crypto</a>
-                              </p>
-                              <p>Et en anglais :</p>
-                              <p>
-                                 <a href="http://www.cryptool-online.org" target="_blank">http://www.cryptool-online.org</a>
-                                 <br>
-                                 <a href="http://www.practicalcryptography.com" target="_blank">http://www.practicalcryptography.com</a>
-                                 <br>
-                                 <a href="http://www.geocachingtoolbox.com" target="_blank">http://www.geocachingtoolbox.com</a>
-                              </p>
-                        </div>
-                     </div>               
-
-                     <div id="pageWhoAreWe" class="pageContent">
-                        <div id="contenuQSN">
-                           <h2>Les associations</h2>
-                           <p>Al Kindi est organisé conjointement par deux associations :</p>
-                           <p><img class="alignleft wp-image-55 size-full" src="images/logo_Animath.png" alt="logo_Animath" width="200" height="78"></p>
-
-                           <h3>Animath</h3>
-                           <p>Animath est une association dont le but est de promouvoir l’activité des mathématiques chez les jeunes tout en développant le plaisir de faire des mathématiques.</p>
-                           <p><a href="http://www.animath.fr" target="_blank">www.animath.fr</a></p>
-                           <p>&nbsp;</p>
-                           <p><img class="alignright size-full wp-image-60" src="images/logo_FranceIoi.png" alt="logo_FranceIoi" width="239" height="43"></p>
-
-                           <h3>France IOI</h3>
-                           <p>France IOI est une association dont l’objectif est de faire découvrir la programmation et l’algorithmique au plus grand nombre de personnes possible.</p>
-                           <p><a href="http://www.france-ioi.org/" target="_blank" rel="nofollow">www.france-ioi.org</a></p>
-                           <p>&nbsp;</p>
-
-                           <h2>Nos partenaires</h2>
-                           <p><img class="alignleft size-full wp-image-62" src="images/education-nationale.png" alt="education-nationale" width="400" height="201"></p>
-
-                           <h3>Le Ministère de l’Éducation Nationale</h3>
-                           <p>Le Ministère de l’Éducation Nationale soutientle&nbsp;concours Al Kindi puisque celui-ci s’inscrit pleinement dans le cadre de la <a href="http://www.education.gouv.fr/cid84398/strategie-mathematiques.html" rel="nofollow">Stratégie mathématiques</a> et du plan <a href="http://ecolenumerique.education.gouv.fr/" rel="nofollow">École numérique</a> du Ministère.</p>
-                           <p>&nbsp;</p>
-                           <p><img class="alignright size-full wp-image-63" src="images/Ministère_défense.jpg" alt="Ministère_défense" width="161" height="199"></p>
-
-                           <h3>Le Ministère de la Défense</h3>
-                           <p>Le Ministère de la Défense encourage la promotion d’actions de sensibilisation à la sécurité des données.</p>
-                           <p>&nbsp;</p>
-                           <h2>Les personnes</h2>
-                           <p>Mathias Hiron</p>
-                           <p>Razvan Barbulescu</p>
-                           <p>Matthieu Lequesne</p>
-                           <p>&nbsp;</p>
-                           <h2>Ils nous soutiennent</h2>
-                           <p><img class="size-full wp-image-66" src="images/logo_cnrs_small.jpeg" alt="logo_cnrs_small" width="50" height="50"></p>
-                        </div>
-                     </div>
-
-                     <div id="pageManual" class="pageContent">
-                        <div id="contenuManuel">
-                           <h1 id="page-title">Manuel du concours</h1>
-                           <p>
-                              Le concours se déroule en 4 tours, du 30 novembre 2015 au 6 février 2016.
-                           </p>
-                           <h2>Premier tour :</h2>
-                           <ul>
-                              <li>Du lundi 30 novembre 8h au samedi 5 décembre 20h inclus (heure de Paris).</li>
-                              <li>Au lycée, en salle informatique, sous la responsabilité d’un enseignant.</li>
-                              <li>Participation seul ou en binôme.</li>
-                              <li>45 minutes pour résoudre 12 défis sans prérequis en cryptanalyse.</li>
-                              <li>Un classement des meilleures équipes sera publié, et les 50% meilleures seront qualifiées pour le 2ème tour.</li>
-                           </ul>
-                           <h2>Deuxième tour :</h2>
-                           <ul>
-                              <li>Du lundi 14 décembre 8h au samedi 19 décembre 20h inclus (heure de Paris).</li>
-                              <li>Participation par équipes de 1 à 4 personnes du même établissement, dont la moitié doit s’être qualifiée au premier tour.</li>
-                              <li>Participation au lycée et de chez soi.</li>
-                              <li>Quatre défis : un premier défi sans limite de temps, dont la résolution débloque les trois défis suivants,  et es trois défis suivants sont en temps limité, à raison d’1h par défi.</li>
-                              <li>Des indices disponibles pour chaque défi, avec un coût en points selon l’indice.</li>
-                              <li>Les 50% meilleurs équipes sont qualifiées pour le 3ème tour si elles ont résolu au moins le premier défi.</li>
-                           </ul>
-                           <h2>Troisième tour :</h2>
-                           <ul>
-                              <li>Du lundi 4 janvier 8h au samedi 16 janvier 20h inclus (heure de Paris).</li>
-                              <li>Le format est le même qu’au 2ème tour, mais la durée est de 1h30 pour les trois défis en temps limité.</li>
-                              <li>Les 50% meilleurs équipes sont qualifiées si elles ont résolu au moins le premier défi</li>
-                           </ul>
-                           <h2>Quatrième tour :</h2>
-                           <ul>
-                              <li>Du mercredi 20 janvier 8h au samedi 6 février 20h inclus (heure de Paris)</li>
-                              <li>Le format est le même qu’aux 2ème et 3ème tours, mais la durée est de 2h par défi en temps limité.</li>
-                           </ul>
-                           <p>
-                           Pour chaque défi résolu lors des tours 2 à 4, résoudre un défi apporte un nombre de points qui dépend des indices demandés. Le classement final est établi en fonction du nombre de points obtenus par les équipes sur ces trois tours, et les éventuels ex-aequo seront départagés selon le temps mis pour résoudre les défis en temps limité.
-                           </p>
-                           <h2>Des prix seront attribué aux meilleures équipes :</h2>
-                           <ul>
-                              <li>Pour la première équipe, un ordinateur portable par membre de l’équipe.</li>
-                              <li>Pour la deuxième équipe, une tablette tactile par membre de l’équipe.</li>
-                              <li>Pour la troisième équipe, un smartphone par membre de l’équipe.</li>
-                              <li>Pour les 25 meilleures équipes au classement national et la meilleure équipe de chaque académie, des livres sur la cryptanalyse.</li>
-                              <li>Des diplômes seront également proposés pour de nombreuses équipes</li>
-                           </ul>
-                     <p>&nbsp;</p>
-                        </div>
-                     </div>
-               </div>
-            </section>
-         </article>
-      </section>
-      
-      <div class="clear"></div>
+   <header class="header" role="banner">
+      <div class="redBand">
       </div>
+      <div class="wrappHeader">
+         <section class="siteLogo">
+            <div class="siteTitle">
+               Concours Alkindi
+            </div>
+         </section>
+         <nav id="menu" role="navigation">
+            <table class="menu">
+               <tr>
+                  <td class="menu-item current-menu-item" id="linkMain">
+                     <a href="#" onclick="loadPage('Main')">Accueil</a>
+                  </td>
+                  <td class="menu-item" id="linkDiscover">
+                     <a href="#" onclick="loadPage('Discover')">Découvrir la cryptanalyse</a>
+                  </td>
+                  <td class="menu-item" id="linkManual">
+                     <a href="#" onclick="loadPage('Manual')">Manuel du concours</a>
+                  </td>
+                  <td class="menu-item" id="linkWhoAreWe">
+                     <a href="#" onclick="loadPage('WhoAreWe')">Qui sommes-nous</a>
+                  </td>
+               </tr>
+            </table>
+         </nav>
+      </div>
+   </header>
 
-      <footer id="footer" role="contentinfo">
-         <div id="copyright">
-            Concours Al Kindi 2015 - <a href="http://www.concours-alkindi.fr/#">Mentions Légales</a>
-         </div>
-      </footer>
+   <div id="container">
+      <section id="content" role="main">
+         <article id="post-2" class="post-2 page type-page status-publish has-post-thumbnail hentry">
+            <section class="entry-content">
+               <div id="bannierManga">
+                  <img width="100%" src="images/bani.png"> 
+                  <div id="accroche">
+                     <h1 id="textAccroche">À TOI DE DÉCRYPTER LE CODE</h1>
+                  </div>
+                  <div id="social-network">
+                     <div id="short_code_si_icon" style="text-align:center;">
+                        <a href="https://www.facebook.com/concours-alkindi" target="_blank" title="Suivez-nous sur Facebook">
+                           <img src="images/facebook.png" style="border:0px;" alt="Suivez-nous sur Facebook" height="40px" width="40px">
+                        </a>
+                        <a href="http://www.twitter.com/ConcoursAlKindi" target="_blank" title="Suivez-nous sur Twitter">
+                           <img src="images/twitter.png" style="border:0px;" alt="Suivez-nous sur Twitter" height="40px" width="40px">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+               <div id="sidebarcontainer">
+                  <aside id="sidebar" role="complementary">
+                     <div id="primary" class="widget-area">
+                        <div id="titreActu">Actualités</div>
+                        <div class="xoxo">
+                             <h3 class="widget-title">-28/08- </h3>
+                             <div class="textwidget">
+                                 <p>L'aventure commence le 30 novembre. Saurez-vous relever le défi ?</p>
+                             </div>
+                        </div>
+                     </div>
+                  </aside>
+                  <!-- Timer script -->
+                  <div id="counterBlock">
+                     <div id="compte_a_rebours">77 jours</div>
+                     <p>avant la première épreuve</p>
+                  </div>
+                  <script type="text/javascript" src="rebours.js"></script>
+               </div>
+
+               <div id="inscription">
+                  <div class="widgetGuts shortcode">
+                     <form action="" method="post" onsubmit="return false" "id="frm-subscriptionFront" novalidate>
+                        <table>
+                           <tbody>
+                              <tr class="required">
+                                 <td>
+                                    <input
+                                       type="text"
+                                       name="email"
+                                       onfocus="if (this.value == &#39;Entre ton adresse Email !&#39;) {this.value = &#39;&#39;;}"
+                                       onblur="if (this.value == &#39;&#39;) {this.value = &#39;Entre ton adresse Email !&#39;;}"
+                                       id="emailInputTextBox"
+                                       required=""
+                                       data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;Une adresse email est requise.&quot;},{&quot;op&quot;:&quot;:email&quot;,&quot;msg&quot;:&quot;Votre adresse mail doit être valide.&quot;}]"
+                                       value="Entre ton adresse Email !"
+                                       class="text">
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td><input type="submit" onclick="saveEmail()" class="subscribeButton button" value="Inscris-toi"></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <div id="SubscriptionResultMessage">
+                  <!-- here will be the answer of the server for email inscription -->
+                        </div>
+                     </form>
+                  </div>
+               </div>
+
+
+               <div id="mobileWrapper">
+                  <div id="pageMain" class="pageContent">
+                     <div class="firstchamp">
+                        <h1 id="page-title">Alkindi, c’est quoi ?</h1>
+                        <p>&nbsp;</p>
+                        <p style="text-align: justify;">
+                           Alkindi&nbsp;est une nouvelle compétition qui porte sur la cryptanalyse : l’art de déchiffrer les codes secrets.
+                           <br>
+                           C’est un concours qui s’adresse à tous les élèves de seconde.
+                        </p>
+                        <p style="text-align: justify;">
+                           Le concours comporte quatre tours :
+                        </p>
+                        <p style="text-align: justify;">
+                           – Le premier tour est une épreuve de 45 minutes sur ordinateur, à laquelle on peut participer seul ou par binôme. Il s’agit d’une série de problèmes interactifs. Chaque problème existe en version facile, intermédiaire et difficile. Tout problème résolu débloque de nouveaux énoncés. Plus on répond à des questions, plus on marque des points.
+                        </p>
+                        <p style="text-align: justify;">
+                           – Les trois tours suivants ont une forme différente. Ce sont des épreuves en temps long (1 à 3 semaines) auxquelles on participe par équipe de 1 à 4 personnes. À chaque tour, il faut déchiffrer un nouveau message secret.
+                        </p>
+                        <p style="text-align: justify;">
+                           – Après chaque tour, un classement est effectué et les 50 % équipes les mieux classées sont sélectionnées pour participer au tour suivant.
+                        </p>
+                        <p style="text-align: justify;">
+                           La participation au concours est entièrement gratuite.
+                        </p>
+                     </div>
+
+                     <div id="third">
+                        <h1 id="titleThird">Objectifs</h1>
+                        <div id="plancheThird">
+                           <img src="images/Planches.png">
+                        </div>
+                        <div id="textThird">
+                           <p>
+                              Aujourd’hui, les questions de sécurité des données sont un des enjeux majeur de notre société, que ce soit pour protéger les transactions bancaires ou garantir la protection de la vie privée. Tout cela est rendu possible grâce aux mathématiques et à l’informatique.
+                              <br>
+                              Nous souhaitons faire découvrir aux lycéens cette application très concrète des mathématiques, qui joue un rôle énorme dans leur vie quotidienne. Nous voulons leur montrer qu’il est possible de prendre du plaisir en faisant des mathématiques. Enfin, nous souhaitons les sensibiliser à la question importante de la
+                              <br>
+                              sécurité de l’information.
+                           </p>
+                           <p>&nbsp;</p>
+                           <p>Ce concours rentre dans le cadre de la Stratégie mathématiques et du plan École numérique du Ministère de l’Éducation nationale.</p>
+                        </div>
+                     </div>
+
+                     <div id="forth">
+                        <div class="arabesqueTitle">
+                           Qui peut participer ?
+                        </div>
+                        <div class="arabesqueSubTitle">
+                           Tous les élèves scolarisés en seconde dans un<br>
+                           établissement français peuvent participer à la<br>
+                           compétition.
+                        </div>
+                        <div class="blocObjectifs">
+                           <div class="blocQuiPeut">
+                              <div class="quiPeutTitre quiPeutTitreGauche">
+                                 Je n'ai jamais fait de crypto. C'est grave ?
+                              </div>
+                              <div class="quiPeutTexte">
+                                 Pas du tout. Au contraire, c’est le principe ! Ce concours s’adresse à des gens qui n’ont jamais fait de cryptanalyse. Lors de l’épreuve en temps limité, toutes les informations nécessaires seront contenues dans le sujet.
+                              </div>
+                           </div>
+                           <div class="blocQuiPeut blocQuiPeutDroit">
+                              <div class="quiPeutTitre quiPeutTitreDroit">
+                                 Est ce que c'est difficile ?
+                              </div>
+                              <div class="quiPeutTexte">
+                                 Le concours est accessible pour tous les élèves de seconde. Lors de la première épreuve, ouverte à tous, chaque question comporte trois niveaux de difficulté. Ainsi, chaque participant peut s’amuser à résoudre des défis adaptés à son niveau. La difficulté augmente lors des tours suivants
+                              </div>
+                           </div>
+                           <div class="blocQuiPeut">
+                              <div class="quiPeutTitre quiPeutTitreGauche">
+                                 Mais il faut quand même  être bon en maths ?
+                              </div>
+                              <div class="quiPeutTexte">
+                                 Pas nécessairement. Si vous avez réussi le brevet c’est que vous avez un niveau en mathématiques suffisant pour pouvoir répondre aux questions.
+                              </div>
+                           </div>
+                           <div class="blocQuiPeut blocQuiPeutDroit">
+                              <div class="quiPeutTitre quiPeutTitreDroit">
+                                 Mais alors qu’est-ce qu’il  faut savoir ?
+                              </div>
+                              <div class="quiPeutTexte">
+                                 Il n’y a pas de prérequis autres que le programme de collège. Venez avec l’esprit ouvert, faites preuve de logique et suivez les consignes. Et surtout amusez vous ! 
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+
+                     <div id="fifth">
+                        <div class="arabesqueTitle">
+                           Qu'est ce qu’on gagne
+                        </div>
+                        <div class="arabesqueSubTitle">
+                           <p>
+                              La première équipe se verra offrir un ordinateur portable par personne. Les seconds gagneront des tablettes tactiles, les troisièmes des smartphones.
+                           </p>
+                           <p>
+                              Les membres des 25 meilleures équipes nationales ainsi que de la meilleure équipe de chaque académie gagneront des livres de cryptographie.
+                           </p>
+                           <p>
+                              Les équipes gagnantes seront conviées à une cérémonie officielle de remise des prix à Paris.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div id="pageDiscover" class="pageContent">
+                     <div class="firstchamp">
+                        <h1 id="page-title">Découvrir la cryptanalyse</h1>
+                           <p>
+                              Pour découvrir la crypatnalyse, nous vous proposons un document d’<a target="new" href="docs/intro_crypto.pdf">introduction à la Cryptanalyse</a>.
+                           </p>
+                           <p>Par ailleurs, pour poursuivre votre dévcouverte, nous vous proposons les sites suivants :</p>
+                           <p>
+                              <a href="http://www.dcode.fr" target="_blank">http://www.dcode.fr</a>
+                              <br>
+                              <a href="http://www.apprendre-en-ligne.net/crypto" target="_blank">http://www.apprendre-en-ligne.net/crypto</a>
+                           </p>
+                           <p>Et en anglais :</p>
+                           <p>
+                              <a href="http://www.cryptool-online.org" target="_blank">http://www.cryptool-online.org</a>
+                              <br>
+                              <a href="http://www.practicalcryptography.com" target="_blank">http://www.practicalcryptography.com</a>
+                              <br>
+                              <a href="http://www.geocachingtoolbox.com" target="_blank">http://www.geocachingtoolbox.com</a>
+                           </p>
+                     </div>
+                  </div>               
+
+                  <div id="pageWhoAreWe" class="pageContent">
+                     <div id="contenuQSN">
+                        <h2>Les associations</h2>
+                        <p>Al Kindi est organisé conjointement par deux associations :</p>
+                        <p><img class="alignleft wp-image-55 size-full" src="images/logo_Animath.png" alt="logo_Animath" width="200" height="78"></p>
+
+                        <h3>Animath</h3>
+                        <p>Animath est une association dont le but est de promouvoir l’activité des mathématiques chez les jeunes tout en développant le plaisir de faire des mathématiques.</p>
+                        <p><a href="http://www.animath.fr" target="_blank">www.animath.fr</a></p>
+                        <p>&nbsp;</p>
+                        <p><img class="alignright size-full wp-image-60" src="images/logo_FranceIoi.png" alt="logo_FranceIoi" width="239" height="43"></p>
+
+                        <h3>France IOI</h3>
+                        <p>France IOI est une association dont l’objectif est de faire découvrir la programmation et l’algorithmique au plus grand nombre de personnes possible.</p>
+                        <p><a href="http://www.france-ioi.org/" target="_blank" rel="nofollow">www.france-ioi.org</a></p>
+                        <p>&nbsp;</p>
+
+                        <h2>Nos partenaires</h2>
+                        <p><img class="alignleft size-full wp-image-62" src="images/education-nationale.png" alt="education-nationale" width="400" height="201"></p>
+
+                        <h3>Le Ministère de l’Éducation Nationale</h3>
+                        <p>Le Ministère de l’Éducation Nationale soutientle&nbsp;concours Al Kindi puisque celui-ci s’inscrit pleinement dans le cadre de la <a href="http://www.education.gouv.fr/cid84398/strategie-mathematiques.html" rel="nofollow">Stratégie mathématiques</a> et du plan <a href="http://ecolenumerique.education.gouv.fr/" rel="nofollow">École numérique</a> du Ministère.</p>
+                        <p>&nbsp;</p>
+                        <p><img class="alignright size-full wp-image-63" src="images/Ministère_défense.jpg" alt="Ministère_défense" width="161" height="199"></p>
+
+                        <h3>Le Ministère de la Défense</h3>
+                        <p>Le Ministère de la Défense encourage la promotion d’actions de sensibilisation à la sécurité des données.</p>
+                        <p>&nbsp;</p>
+                        <h2>Les personnes</h2>
+                        <p>Mathias Hiron</p>
+                        <p>Razvan Barbulescu</p>
+                        <p>Matthieu Lequesne</p>
+                        <p>&nbsp;</p>
+                        <h2>Ils nous soutiennent</h2>
+                        <p><img class="size-full wp-image-66" src="images/logo_cnrs_small.jpeg" alt="logo_cnrs_small" width="50" height="50"></p>
+                     </div>
+                  </div>
+
+                  <div id="pageManual" class="pageContent">
+                     <div id="contenuManuel">
+                        <h1 id="page-title">Manuel du concours</h1>
+                        <p>
+                           Le concours se déroule en 4 tours, du 30 novembre 2015 au 6 février 2016.
+                        </p>
+                        <h2>Premier tour :</h2>
+                        <ul>
+                           <li>Du lundi 30 novembre 8h au samedi 5 décembre 20h inclus (heure de Paris).</li>
+                           <li>Au lycée, en salle informatique, sous la responsabilité d’un enseignant.</li>
+                           <li>Participation seul ou en binôme.</li>
+                           <li>45 minutes pour résoudre 12 défis sans prérequis en cryptanalyse.</li>
+                           <li>Un classement des meilleures équipes sera publié, et les 50% meilleures seront qualifiées pour le 2ème tour.</li>
+                        </ul>
+                        <h2>Deuxième tour :</h2>
+                        <ul>
+                           <li>Du lundi 14 décembre 8h au samedi 19 décembre 20h inclus (heure de Paris).</li>
+                           <li>Participation par équipes de 1 à 4 personnes du même établissement, dont la moitié doit s’être qualifiée au premier tour.</li>
+                           <li>Participation au lycée et de chez soi.</li>
+                           <li>Quatre défis : un premier défi sans limite de temps, dont la résolution débloque les trois défis suivants,  et es trois défis suivants sont en temps limité, à raison d’1h par défi.</li>
+                           <li>Des indices disponibles pour chaque défi, avec un coût en points selon l’indice.</li>
+                           <li>Les 50% meilleurs équipes sont qualifiées pour le 3ème tour si elles ont résolu au moins le premier défi.</li>
+                        </ul>
+                        <h2>Troisième tour :</h2>
+                        <ul>
+                           <li>Du lundi 4 janvier 8h au samedi 16 janvier 20h inclus (heure de Paris).</li>
+                           <li>Le format est le même qu’au 2ème tour, mais la durée est de 1h30 pour les trois défis en temps limité.</li>
+                           <li>Les 50% meilleurs équipes sont qualifiées si elles ont résolu au moins le premier défi</li>
+                        </ul>
+                        <h2>Quatrième tour :</h2>
+                        <ul>
+                           <li>Du mercredi 20 janvier 8h au samedi 6 février 20h inclus (heure de Paris)</li>
+                           <li>Le format est le même qu’aux 2ème et 3ème tours, mais la durée est de 2h par défi en temps limité.</li>
+                        </ul>
+                        <p>
+                        Pour chaque défi résolu lors des tours 2 à 4, résoudre un défi apporte un nombre de points qui dépend des indices demandés. Le classement final est établi en fonction du nombre de points obtenus par les équipes sur ces trois tours, et les éventuels ex-aequo seront départagés selon le temps mis pour résoudre les défis en temps limité.
+                        </p>
+                        <h2>Des prix seront attribué aux meilleures équipes :</h2>
+                        <ul>
+                           <li>Pour la première équipe, un ordinateur portable par membre de l’équipe.</li>
+                           <li>Pour la deuxième équipe, une tablette tactile par membre de l’équipe.</li>
+                           <li>Pour la troisième équipe, un smartphone par membre de l’équipe.</li>
+                           <li>Pour les 25 meilleures équipes au classement national et la meilleure équipe de chaque académie, des livres sur la cryptanalyse.</li>
+                           <li>Des diplômes seront également proposés pour de nombreuses équipes</li>
+                        </ul>
+                  <p>&nbsp;</p>
+                     </div>
+                  </div>
+            </div>
+         </section>
+      </article>
+   </section>
+   
+   <div class="clear"></div>
    </div>
 
-</body></html>
+   <footer id="footer" role="contentinfo">
+      <div id="copyright">
+         Concours Al Kindi 2015 - <a href="http://www.concours-alkindi.fr/#">Mentions Légales</a>
+      </div>
+   </footer>
+
+</body>
+</html>

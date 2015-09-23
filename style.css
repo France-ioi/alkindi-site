@@ -262,10 +262,6 @@ a {
     text-decoration: none;
     color: black;
 }
-#wrapper {
-    position: relative;
-}
-
 #container {
     max-width: 1024px;
     margin-left: auto;

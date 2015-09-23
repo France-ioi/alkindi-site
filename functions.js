@@ -1,5 +1,5 @@
 function loadPage(name) {
-      $(".menu ul li").removeClass("current-menu-item");
+      $(".menu tr td").removeClass("current-menu-item");
       $("#link" + name).addClass("current-menu-item");
       $(".pageContent").hide();
       $("#page" + name).show();
