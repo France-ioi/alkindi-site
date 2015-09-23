@@ -43,7 +43,7 @@
       </div>
    </header>
 
-   <div id="container">
+   <div class="mainContainer">
       <section id="content" role="main">
          <article id="post-2" class="post-2 page type-page status-publish has-post-thumbnail hentry">
             <section class="entry-content">
@@ -64,32 +64,12 @@
                   </div>
                </div>
 
-               <div id="sidebarcontainer">
-                  <aside id="sidebar" role="complementary">
-                     <div id="primary" class="widget-area">
-                        <div id="titreActu">Actualités</div>
-                        <div class="xoxo">
-                             <h3 class="widget-title">-28/08- </h3>
-                             <div class="textwidget">
-                                 <p>L'aventure commence le 30 novembre. Saurez-vous relever le défi ?</p>
-                             </div>
-                        </div>
-                     </div>
-                  </aside>
-                  <!-- Timer script -->
-                  <div id="counterBlock">
-                     <div id="compte_a_rebours">77 jours</div>
-                     <p>avant la première épreuve</p>
-                  </div>
-                  <script type="text/javascript" src="rebours.js"></script>
-               </div>
-
                <div id="inscription">
                   <div class="widgetGuts shortcode">
                      <form action="" method="post" onsubmit="return false" "id="frm-subscriptionFront" novalidate>
                         <table>
                            <tbody>
-                              <tr class="required">
+                              <tr>
                                  <td>
                                     <input
                                        type="text"
@@ -109,14 +89,33 @@
                            </tbody>
                         </table>
                         <div id="SubscriptionResultMessage">
-                  <!-- here will be the answer of the server for email inscription -->
+                           <!-- here will be the answer of the server for email inscription -->
                         </div>
                      </form>
                   </div>
                </div>
 
+               <div class="pageAndSidebarContainer">
 
-               <div id="mobileWrapper">
+                  <div class="sidebarContainer">
+                     <aside role="complementary">
+                        <div id="primary" class="widget-area">
+                           <div class="titreActu">Actualités</div>
+                           <div class="widgetActu">
+                              <h3>-28/08-</h3>
+                              <p>L'aventure commence le 30 novembre. Saurez-vous relever le défi ?</p>
+                           </div>
+                        </div>
+                     </aside>
+                     <!-- Timer script -->
+                     <div class="counterBlock">
+                        <p id="compte_a_rebours_prefix"></p>
+                        <div id="compte_a_rebours">77 jours</div>
+                        <p id="compte_a_rebours_postfix">avant la première épreuve</p>
+                        <script type="text/javascript" src="rebours.js"></script>
+                     </div>
+                  </div>
+
                   <div id="pageMain" class="pageContent">
                      <div class="firstchamp">
                         <h1 id="page-title">Alkindi, c’est quoi ?</h1>

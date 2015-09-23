@@ -262,20 +262,74 @@ a {
     text-decoration: none;
     color: black;
 }
-#container {
+.mainContainer {
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
 }
+.pageAndSidebarContainer {
+   min-width: 580px;
+   margin-top: 20px;
+   position: relative;
+}
+
+/* Sidebar */
+.sidebarContainer {
+    position: absolute;
+    top: 0px;
+    right: 0px;    
+    width: 220px;
+    margin-left: 20px;
+    min-height:100% !important;
+}
+.titreActu {
+    width: 100%;
+    font-size: 30px;
+    color: rgb(172, 26, 29);
+    padding-top: 20px;
+    text-align: right;
+}
+.widgetActu {
+    margin-top: 20px;
+    text-align: right;
+}
+.widgetActu h3 {
+    font-size: 24px;
+    color: rgb(172, 26, 29);
+}
+.counterBlock {
+    text-align: center;
+    clear: both;
+    background-color: #AC1A1D;
+    color: #fff;
+    padding-bottom: 8px;
+    margin-top: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+#compte_a_rebours {
+    text-align: center;
+    font-size: 36px;
+    padding: 5px;
+    color: white;
+}
+
+/* Page Content */
+
+.pageContent {
+   margin-right: 220px; /* should be same as sidebar width */
+   margin-bottom: 20px;
+}
+
+#pageDiscover, #pageManual, #pageWhoAreWe {
+   display: none;
+}
 
 /* Content Manuel */
 
-#contenuManuel {
-    margin-top: 20px;
-    min-width: 820px;
-    margin-right: 20px;
-}
 #contenuManuel h2 {
     margin-top: 20px;
 }
@@ -292,11 +346,6 @@ a {
     margin-bottom: 20px;
     margin-right: 10px;
 }
-#contenuQSN {
-    margin-top: 20px;
-    min-width: 580px;
-    margin-right: 230px;
-}
 #contenuQSN ul {
     list-style-type: circle;
 }
@@ -308,8 +357,6 @@ a {
 }
 .firstchamp {
     margin-top: 20px;
-    min-width: 820px;
-    min-height: 560px;
     margin-right: 20px;
 }
 
@@ -324,16 +371,6 @@ a {
 }
 .firstchamp p {
     margin-top: 10px;
-}
-#sidebar {
-    min-height: 470px;
-}
-#sidebarcontainer {
-    margin-top: 60px;
-    width: 220px;
-    float: right;
-    clear: both;
-    margin-left: 20px;
 }
 #third {
     width: 100%;
@@ -434,42 +471,8 @@ a {
     margin-top: 10px;
     width: auto;
 }
-#titreActu {
-    width: 100%;
-    font-size: 30px;
-    color: rgb(172, 26, 29);
-    padding-top: 20px;
-    text-align: right;
-}
-/* Sidebar */
-
-.xoxo {
-    margin-top: 20px;
-    text-align: right;
-}
-.xoxo h3 {
-    font-size: 24px;
-    color: rgb(172, 26, 29);
-}
-#counterBlock {
-    text-align: center;
-    clear: both;
-    background-color: #AC1A1D;
-    color: #fff;
-    padding-bottom: 8px;
-}
-#compte_a_rebours {
-    text-align: center;
-    font-size: 36px;
-    padding: 5px;
-    color: white;
-}
-.required label {
-    display: none;
-}
 
 /* Footer */
-
 #footer {
     height: 100px;
     background-color: rgb(172, 26, 29);
@@ -542,9 +545,6 @@ a {
         margin-left: 0px;
         padding: 0px;
     }
-    #titreActu {
-        text-align: center;
-    }
     .blocQuiPeut {
         width: 100%;
         float: none;
@@ -554,14 +554,17 @@ a {
     }
 
     /*sidebar*/
-    
-    #sidebar {
+    .sidebarContainer {
         margin-top: 10px;
+        width: 180px;
+        float: right;
         clear: both;
-        width: 100%;
-        float: none;
+        margin-left: 10px;        
     }
-    .xoxo {
+    .titreActu {
+        text-align: center;
+    }
+    .widgetActu {
         margin-top: 20px;
         text-align: center;
     }
@@ -571,7 +574,10 @@ a {
 
 @media (max-width: 640px) {
     /*Main content*/
-    
+    .pageAndSidebarContainer {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     .arabesqueTitle {
         font-size: 26px;
     }
@@ -581,23 +587,15 @@ a {
     #third {
         margin-top: 0px;
     }
-    #mobileWrapper {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    /*Sidebar*/
     
-    #sidebarcontainer {
+    /*Sidebar*/    
+    .sidebarContainer {
         display: none;
     }
-    /*subscription*/
     
+    /*subscription*/    
     #emailInputTextBox {
         font-size: 20px;
         width: 100%;
     }
-}
-
-#pageDiscover, #pageManual, #pageWhoAreWe {
-	display: none;
 }
