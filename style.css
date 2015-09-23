@@ -139,6 +139,11 @@ section {
 .alignnone {
     margin: 5px 20px 20px 0;
 }
+.aligncenter {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
 .aligncenter,
 div.aligncenter {
     display: block;
@@ -147,14 +152,14 @@ div.aligncenter {
 .alignright {
     float: right;
     margin: 5px 0 20px 20px;
+    display: inline;
+    padding-left: 15px;
 }
 .alignleft {
     float: left;
     margin: 5px 20px 20px 0;
-}
-a img.alignright {
-    float: right;
-    margin: 5px 0 20px 20px;
+    display: inline;
+    padding-right: 15px;
 }
 a img.alignnone {
     margin: 5px 20px 20px 0;
@@ -229,21 +234,7 @@ a img.aligncenter {
     z-index: 100000;
     /* Above WP toolbar. */
 }
-.alignleft {
-    display: inline;
-    float: left;
-    padding-right: 15px;
-}
-.alignright {
-    display: inline;
-    float: right;
-    padding-left: 15px;
-}
-.aligncenter {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
+
 /* General Style */
 
 * {
@@ -270,6 +261,7 @@ a {
 }
 .pageAndSidebarContainer {
    min-width: 580px;
+   min-height: 580px;
    margin-top: 20px;
    position: relative;
 }
@@ -281,7 +273,8 @@ a {
     right: 0px;    
     width: 220px;
     margin-left: 20px;
-    min-height:100% !important;
+/*    min-height:100% !important; */ /* use this min-height if you want a sidebar for the whole page */
+   min-height: 400px;
 }
 .titreActu {
     width: 100%;
@@ -306,9 +299,10 @@ a {
     padding-bottom: 8px;
     margin-top: 20px;
     width: 100%;
-    position: absolute;
+   /* uncomment following if you prefer the counter in the bottom */
+/*    position: absolute;
     bottom: 0px;
-    right: 0px;
+    right: 0px;*/
 }
 #compte_a_rebours {
     text-align: center;
@@ -320,7 +314,6 @@ a {
 /* Page Content */
 
 .pageContent {
-   margin-right: 220px; /* should be same as sidebar width */
    margin-bottom: 20px;
 }
 
@@ -328,64 +321,51 @@ a {
    display: none;
 }
 
-/* Content Manuel */
+.firstBlockNextToSidebar {
+   margin-right: 240px; /* should be enough to englobe sidebar width */
+}
 
-#contenuManuel h2 {
+/* Title and Text style for Main page */
+
+.defaultText {
+   text-align: justify;
+   margin-top: 10px;
+}
+.defaultText p {
+   margin-top: 10px;
+}
+.defaultText h2 {
     margin-top: 20px;
 }
-
-/* Content quiSommeNous.php */
-
-#contenuQSN h2 {
-    font-size: 24px;
-    color: #AC1A1D;
-    padding-left: 52px;
-    background-image: url("images/arabesquecarre.png");
-    background-repeat: no-repeat;
-    background-position: left center;
-    margin-bottom: 20px;
-    margin-right: 10px;
-}
-#contenuQSN ul {
-    list-style-type: circle;
-}
-#contenuQSN ol {
-    list-style-type: upper-roman;
-}
-#contenuQSN p {
-    margin-bottom: 5px;
-}
-.firstchamp {
-    margin-top: 20px;
-    margin-right: 20px;
-}
-
-/* Main page content */
-
-#content a {
+.defaultText a {
     color: #ac1a1d;
     text-decoration: underline;
 }
-.firstchamp h1 {
+.pageTitle {
+    margin-top: 20px;
+    margin-right: 20px;
     font-size: 48px;
+    color: #AC1A1D;
 }
-.firstchamp p {
+.rightDecorationTitle {
+    height: 100px;
+    width: 12%;
+    background-image: url("images/soudroite.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    text-align: right;
+    vertical-align: middle;
+    color: #AC1A1D;
+    font-size: 30px;
+    padding-right: 5%;
+    display: table-cell;
+}
+.cartoon {
+    height: 350px;
+    width: 250px;
     margin-top: 10px;
-}
-#third {
-    width: 100%;
-    min-height: 450px;
-    margin-top: 160px;
-}
-#forth {
-    width: 100%;
-    min-height: 700px;
-    margin-top: 20px;
-}
-#fifth {
-    width: 100%;
-    min-height: 600px;
-    margin-top: 20px;
+    margin-right: 30px;
+    float: left;
 }
 .arabesqueTitle {
     width: 100%;
@@ -397,6 +377,7 @@ a {
     color: rgb(172, 26, 29);
     text-align: center;
     line-height: 190px;
+    clear: both;
 }
 .arabesqueSubTitle {
     width: 100%;
@@ -420,56 +401,25 @@ a {
 .blocQuiPeutDroit {
     margin-left: 40px;
 }
-.quiPeutTitre {
+.squareTitle {
     font-size: 24px;
     color: rgb(172, 26, 29);
     background-image: url("images/arabesquecarre.png");
     background-repeat: no-repeat;
-    height: 50px;
+    margin-bottom: 20px;
 }
-.quiPeutTitreGauche {
+.squareTitleGauche {
     padding-left: 52px;
     text-align: left;
     background-position: left;
 }
-.quiPeutTitreDroit {
+.squareTitleDroit {
     padding-right: 52px;
     text-align: right;
     background-position: right;
 }
-.quiPeutTexte {
-    margin-top: 10px;
-    text-align: justify;
-}
-#titleThird {
-    height: 100px;
-    width: 12%;
-    background-image: url("images/soudroite.png");
-    background-repeat: no-repeat;
-    background-position: right center;
-    text-align: right;
-    vertical-align: middle;
-    color: #AC1A1D;
-    font-size: 30px;
-    padding-right: 5%;
-    display: table-cell;
-}
-#plancheThird {
-    height: 350px;
-    width: 250px;
-    float: left;
-    margin-top: 10px;
-}
-#plancheThird img {
-    width: 100%;
-}
-#textThird {
-    min-height: 350px;
-    text-align: justify;
-    margin-left: 250px;
-    padding-left: 30px;
-    margin-top: 10px;
-    width: auto;
+.squareTitleFixeHeight {
+    height: 50px;
 }
 
 /* Footer */
@@ -486,12 +436,6 @@ a {
 #social-network {
     width: 100px;
     float: right;
-}
-#page-title {
-    margin-top: 20px;
-    margin-right: 20px;
-    font-size: 48px;
-    color: #AC1A1D;
 }
 #click-menu {
     background-color: transparent;
@@ -530,20 +474,8 @@ a {
 
 @media (max-width: 780px) {
     /*Main content*/    
-    .firstchamp {
-        width: 100%;
-        min-width: initial;
-    }
-    #contenuQSN {
-        min-width: initial;
-    }
-    #plancheThird {
+    .cartoon {
         display: none;
-    }
-    #textThird {
-        width: 100%;
-        margin-left: 0px;
-        padding: 0px;
     }
     .blocQuiPeut {
         width: 100%;
@@ -574,18 +506,19 @@ a {
 
 @media (max-width: 640px) {
     /*Main content*/
+    .cartoon {
+        display: none;
+    }
     .pageAndSidebarContainer {
         margin-left: 10px;
         margin-right: 10px;
     }
+    .firstBlockNextToSidebar {
+        width: 100%;
+        min-width: initial;
+    }
     .arabesqueTitle {
         font-size: 26px;
-    }
-    #contenuQSN {
-        width: 100%;
-    }
-    #third {
-        margin-top: 0px;
     }
     
     /*Sidebar*/    
