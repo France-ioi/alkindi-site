@@ -63,11 +63,3 @@
         line-height: none;
     }
 }
-
-
-@media (max-width: 780px) {
-    #textAccroche {
-        line-height: 24px;
-        font-size: 12px;
-    }
-}
