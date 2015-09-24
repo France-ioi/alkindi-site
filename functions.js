@@ -1,4 +1,4 @@
-function loadPage(name) {
+function changeMenuStyle(name) {
       $(".menu tr td").removeClass("current-menu-item");
       $("#link" + name).addClass("current-menu-item");
 }
