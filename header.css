@@ -21,16 +21,19 @@ section.siteLogo {
     background-position: 50% 40%;
     background-repeat: no-repeat;
     background-size: 90px 90px;
+    position: relative;
 }
 div.siteTitle {
     font-size: 30px;
-    max-width: 460px;
-    word-spacing: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 40px;
-    margin-top: 20px;
     text-transform: uppercase;
+    word-spacing: 50px;
+    text-align: center;
+    width: 100%;
+    margin-left: -50%;
+    margin-top: 20px;
+    padding-right: 40px;
+    position: absolute;
+    left: 50%;
 }
 
 /* style for the menu barre */
