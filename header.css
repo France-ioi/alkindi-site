@@ -45,12 +45,16 @@ table.menu tr td {
     text-transform: uppercase;
     padding-bottom: 10px;
 }
-.current-menu-item a {
-    font-size: 18px;
-    color: #AC1A1D;
-}
 .menu-item a:hover {
     background-color: #F4D5D5;
+}
+.current-menu-item a {
+    background-color: #AC1A1D;
+    color: white;
+}
+.current-menu-item a:hover {
+    background-color: #AC1A1D;
+    color: white;
 }
 
 @media (max-width: 640px) {

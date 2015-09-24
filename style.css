@@ -94,9 +94,6 @@ video {
     margin: 0;
     vertical-align: baseline
 }
-body {
-    line-height: 1.4
-}
 ol,
 ul {
 	margin-left: 20px;
@@ -155,12 +152,13 @@ section {
     padding: 0;
 }
 body {
-    background-image: url("images/AccueilBG.png");
-    background-position: bottom center;
-    background-color: #f0ede9;
-    background-repeat: no-repeat;
-    height: 100%;
-    font-family: "Varela Round";
+   background-image: url("images/AccueilBG.png");
+   background-position: bottom center;
+   background-color: #f0ede9;
+   background-repeat: no-repeat;
+   height: 100%;
+   font-family: "Varela Round";
+   line-height: 1.4;
 }
 a {
     text-decoration: none;
