@@ -1,6 +1,6 @@
 function changeMenuStyle(name) {
       $(".menu tr td").removeClass("current-menu-item");
-      $("#link" + name).addClass("current-menu-item");
+      $(".link" + name).addClass("current-menu-item");
 }
 
 // This function used a regexp to check the syntax of an email

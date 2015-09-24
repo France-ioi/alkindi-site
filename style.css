@@ -354,6 +354,12 @@ a {
     opacity: 0.8;
 }
 
+
+.showSmall {
+   display: none;
+}
+
+
 /*Responsive Media Queries, 780px */
 
 @media (max-width: 780px) {
@@ -390,10 +396,17 @@ a {
 
 @media (max-width: 640px) {
     /*Main content*/
+	.showBig {
+	   display: none;
+	}
+	.showSmall {
+		display: block;
+	}
     .cartoon {
         display: none;
     }
     .pageAndSidebarContainer {
+		min-width: initial;
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -415,4 +428,8 @@ a {
         font-size: 20px;
         width: 100%;
     }
+
+	.pageTitle {
+		font-size: 20px;
+	}
 }
