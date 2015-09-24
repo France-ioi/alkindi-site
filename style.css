@@ -228,10 +228,6 @@ a {
    margin-bottom: 20px;
 }
 
-#pageDiscover, #pageManual, #pageWhoAreWe {
-   display: none;
-}
-
 .firstBlockNextToSidebar {
    margin-right: 240px; /* should be enough to englobe sidebar width */
 }

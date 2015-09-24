@@ -1,8 +1,6 @@
 function loadPage(name) {
       $(".menu tr td").removeClass("current-menu-item");
       $("#link" + name).addClass("current-menu-item");
-      $(".pageContent").hide();
-      $("#page" + name).show();
 }
 
 // This function used a regexp to check the syntax of an email
