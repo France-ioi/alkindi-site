@@ -37,6 +37,9 @@ div.siteTitle {
 }
 
 /* style for the menu barre */
+.showSmall {
+   display: none;
+}
 table.menu {
    border: 0px;
    width: 100%;
@@ -65,17 +68,30 @@ table.menu tr td {
         background-color: white;
         min-height: 50px;
     }
-	div.siteTitle {
-		font-size: 20px;
-		text-transform: uppercase;
-		word-spacing: 30px;
-		text-align: center;
-		width: 100%;
-		margin-left: -50%;
-		margin-top: 10px;
-		padding-right: 20px;
-		position: absolute;
-		left: 50%;
-	}
-
+   .showBig {
+   display: none;
+   }
+   .showSmall {
+      display: block;
+      border: 1px solid black;
+   }
+   table.menu tr td {
+      vertical-align: middle;
+   }
+   section.siteLogo {
+    min-height: 70px;
+    background-size: 70px 70px;
+   }
+   div.siteTitle {
+      font-size: 20px;
+      text-transform: uppercase;
+      word-spacing: 30px;
+      text-align: center;
+      width: 100%;
+      margin-left: -50%;
+      margin-top: 20px;
+      padding-right: 20px;
+      position: absolute;
+      left: 50%;
+   }
 }
