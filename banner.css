@@ -26,16 +26,6 @@
     text-align: center;
     line-height: 70px;
 }
-#crypted-message{
-	position : absolute;
-	top : 65%;
-	left : 440px;
-	color : #AC1A1D;
-	font-size: 20px;
-	font-weight : bolder;
-	width : 55%;
-	text-align : center;
-}
 
 /* IE10+ specific styles go here */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
@@ -72,24 +62,4 @@
         text-align: center;
         line-height: 40px;
     }
-	#crypted-message{
-	position : absolute;
-	top : 20%;
-	left : 20%;
-	font-size : 25px;
-	font-weight : bolder;
-	width : 75%;
-	text-align : center;
-	}
-}
-
-/* 640px */
-
-@media (max-width: 640px) {
-	#crypted-message{
-	position : absolute;
-	font-size : 16px;
-	top : 5%;
-	right : 5%;
-	}
 }
