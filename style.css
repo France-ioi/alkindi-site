@@ -191,13 +191,9 @@ a {
 
 /* Sidebar */
 .sidebarContainer {
-    position: absolute;
-    top: 0px;
-    right: 0px;    
     width: 220px;
     margin-left: 20px;
-/*    min-height:100% !important; */ /* use this min-height if you want a sidebar for the whole page */
-   min-height: 400px;
+	float: right;
 }
 .titreActu {
     width: 100%;
