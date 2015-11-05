@@ -25,6 +25,12 @@ myApp.config(function($routeProvider) {
    .when('/pageWhoAreWe', {
       templateUrl : 'pageWhoAreWe.html',
       controller  : 'PageCtrl'
+   })
+
+   // route for the who are we page
+   .when('/pageRegister', {
+      templateUrl : 'pageRegister.html',
+      controller  : 'PageCtrl'
    });
 });
 
