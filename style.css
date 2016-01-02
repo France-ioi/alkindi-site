@@ -165,12 +165,15 @@ a {
     color: black;
 }
 .registration {
-	font-size: 1.5em;
+	background-color: #AC1A1D;
+	font-size: 1em;
 	margin-top: 10px;
+	margin-right: 120px;
+	padding: 10px;
+	color: #f0ede9;
 }
 .registration a {
-	color: blue;
-	font-weight: bold;
+	color: #DDEE00;
 }
 .widgetActu a {
 	color: blue;

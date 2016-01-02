@@ -27,12 +27,19 @@ myApp.config(function($routeProvider) {
       controller  : 'PageCtrl'
    })
 
-   // route for the who are we page
+   // route for the register page
    .when('/pageRegister', {
       templateUrl : 'pageRegister.html',
+      controller  : 'PageCtrl'
+   })
+   
+   // route for the BD page
+   .when('/pageBD', {
+      templateUrl : 'pageBD.html',
       controller  : 'PageCtrl'
    });
 });
 
 myApp.controller('PageCtrl', function() {
+    $("#monActu").load("actu.html"); 
    });

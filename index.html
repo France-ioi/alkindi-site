@@ -33,8 +33,11 @@
                   <td class="menu-item current-menu-item linkMain">
                      <a href="#">&nbsp;Accueil&nbsp;</a>
                   </td>
+   			  	 <td class="menu-item linkBD">
+                        <a href="#pageBD">La BD</a>
+                  </td>
                   <td class="menu-item linkDiscover">
-                     <a href="#pageDiscover">&nbsp;Découvrir&#65279;&#8197;&#8203;&#8197;&#65279;la&#65279;&#8197;&#8203;&#8197;&#65279;cryptanalyse&nbsp;</a>
+                     <a href="#pageDiscover">&nbsp;Découvrir&#65279;&#8197;&#8203;&#8197;&#65279;la&#65279;&#8197;&#8203;&#8197;&#65279;crypto&nbsp;</a>
                   </td>
                   <td class="menu-item linkManual">
                      <a href="#pageManual">&nbsp;Manuel&#65279;&#8197;&#8203;&#8197;&#65279;du&#65279;&#8197;&#8203;&#8197;&#65279;concours&nbsp;</a>
@@ -45,15 +48,19 @@
                   <td class="menu-item linkWhoAreWe">
                      <a href="#pageWhoAreWe">&nbsp;Qui&#65279;&#8197;&#8203;&#8197;&#65279;sommes-nous&nbsp;?</a>
                   </td>
-               </tr>
+               </tr>                 
+			
             </table>
             <table class="menu showSmall">
                <tr>
                   <td class="menu-item current-menu-item linkMain">
                      <a href="#">&nbsp;Accueil&nbsp;</a>
                   </td>
+                  <td class="menu-item linkBD">
+                     <a href="#pageBD">La BD</a>
+                  </td>
                   <td class="menu-item linkDiscover">
-                     <a href="#pageDiscover">&nbsp;Découvrir&#65279;&#8197;&#8203;&#8197;&#65279;la&#65279;&#8197;&#8203;&#8197;&#65279;cryptanalyse&nbsp;</a>
+                     <a href="#pageDiscover">&nbsp;Découvrir&#65279;&#8197;&#8203;&#8197;&#65279;la&#65279;&#8197;&#8203;&#8197;&#65279;crypto&nbsp;</a>
                   </td>
                </tr>
                <tr>
@@ -97,80 +104,12 @@
                      </div>
                   </div>
                </div>
-               <!--
-               <div id="inscription">
-                  <div>
-                     <form action="" method="post" onsubmit="return false" id="frm-subscriptionFront" novalidate>
-                        <table>
-                           <tbody>
-                              <tr>
-                                 <td>
-                                    <input
-                                       type="text"
-                                       name="email"
-                                       onfocus="if (this.value == &#39;Entre ton adresse Email !&#39;) {this.value = &#39;&#39;;}"
-                                       onblur="if (this.value == &#39;&#39;) {this.value = &#39;Entre ton adresse Email !&#39;;}"
-                                       id="emailInputTextBox"
-                                       required=""
-                                       data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;Une adresse email est requise.&quot;},{&quot;op&quot;:&quot;:email&quot;,&quot;msg&quot;:&quot;Votre adresse mail doit être valide.&quot;}]"
-                                       value="Entre ton adresse Email !"
-                                       class="text">
-                                 </td>
-                              </tr>
-                              <tr>
-                                 <td><input type="submit" onclick="saveEmail()" class="subscribeButton button" value="Inscris-toi"></td>
-                              </tr>
-                           </tbody>
-                        </table>
-                        <div id="SubscriptionResultMessage">
-                        </div>
-                     </form>
-                  </div>
-               </div>
-               -->
-               <div class="registration">Enseignants, <a href="https://coordinateur.concours-alkindi.fr">devenez coordinateurs</a> et inscrivez vos classes.</div>
-               <div class="registration">Le premier tour se déroule sur <a href="https://epreuve.concours-alkindi.fr">epreuve.concours-alkindi.fr</a></div>
+
+
+
+               <div id="monActu" class="registration">  <-- ce div contient l'actu -->	</div>
 
                <div class="pageAndSidebarContainer">
-
-                  <div class="sidebarContainer">
-                     <!-- Timer script -->
-                     <!--
-                     <div class="counterBlock">
-                        <p id="compte_a_rebours_prefix"></p>
-                        <div id="compte_a_rebours">77 jours</div>
-                        <p id="compte_a_rebours_postfix">avant la première épreuve</p>
-                        <script type="text/javascript" src="rebours.js"></script>
-                     </div>
-                     -->
-                     <div class="counterBlock">
-                        <a style="font-size:1.5em;color:white" href="https://epreuve.concours-alkindi.fr">Premier tour<br/>du 30 novembre<br/>au 5 décembre</a>
-                     </div>
-                     <aside role="complementary">
-                        <div id="primary" class="widget-area">
-                           <div class="titreActu">Actualités</div>
-                           <div class="widgetActu">
-                              <h3>-22/11-</h3>
-                              <p>Modifications des <a target="new" href="#/pageManual">dates des tours 2, 3 et 4</a>.</p>
-                           </div>
-                           <div class="widgetActu">
-                              <h3>-10/11-</h3>
-                              <p>L'<a target="new" href="docs/affiche_alkindi.pdf">affiche du concours</a> est disponible !</p>
-                           </div>
-                           <div class="widgetActu">
-                              <h3>-12/10-</h3>
-                              <p>L'inscription des <a href="http://coordinateur.concours-alkindi.fr">coordinateurs</a> est ouverte.</p>
-                           </div>
-<!--						   
-                           <div class="widgetActu">
-                              <h3>-28/08-</h3>
-                              <p>L'aventure commence le 30 novembre. Saurez-vous relever le défi ?</p>
-                           </div>
--->
-                        </div>
-                     </aside>
-                  </div>
-
                   <div ng-view><!-- the div that display the page content --></div>
 
                </div>
