@@ -17,7 +17,7 @@ myApp.config(function($routeProvider) {
 
    // route for the manual page
    .when('/pageManual', {
-      templateUrl : 'pageManual.html',
+      templateUrl : 'pageManual.html?v=2',
       controller  : 'PageCtrl'
    })
 
@@ -29,7 +29,7 @@ myApp.config(function($routeProvider) {
 
    // route for the register page
    .when('/pageRegister', {
-      templateUrl : 'pageRegister.html',
+      templateUrl : 'pageRegister.html?v=2',
       controller  : 'PageCtrl'
    })
    
