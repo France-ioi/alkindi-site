@@ -5,41 +5,41 @@ myApp.config(function($routeProvider) {
 
    // route for the main page
    .when('/', {
-      templateUrl : 'pageMain.html',
+      templateUrl : 'pageMain.html?v=6',
       controller  : 'PageCtrl'
    })
 
    // route for the dicovery page
    .when('/pageDiscover', {
-      templateUrl : 'pageDiscover.html',
+      templateUrl : 'pageDiscover.html?v=6',
       controller  : 'PageCtrl'
    })
 
    // route for the manual page
    .when('/pageManual', {
-      templateUrl : 'pageManual.html?v=5',
+      templateUrl : 'pageManual.html?v=6',
       controller  : 'PageCtrl'
    })
 
    // route for the who are we page
    .when('/pageWhoAreWe', {
-      templateUrl : 'pageWhoAreWe.html',
+      templateUrl : 'pageWhoAreWe.html?v=6',
       controller  : 'PageCtrl'
    })
 
    // route for the register page
    .when('/pageRegister', {
-      templateUrl : 'pageRegister.html?v=5',
+      templateUrl : 'pageRegister.html?v=6',
       controller  : 'PageCtrl'
    })
    
    // route for the BD page
    .when('/pageBD', {
-      templateUrl : 'pageBD.html',
+      templateUrl : 'pageBD.html?v=6',
       controller  : 'PageCtrl'
    });
 });
 
 myApp.controller('PageCtrl', function() {
-    $("#monActu").load("actu.html?v=5"); 
+    $("#monActu").load("actu.html?v=6"); 
    });
