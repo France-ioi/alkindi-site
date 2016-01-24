@@ -17,7 +17,7 @@ myApp.config(function($routeProvider) {
 
    // route for the manual page
    .when('/pageManual', {
-      templateUrl : 'pageManual.html?v=4',
+      templateUrl : 'pageManual.html?v=5',
       controller  : 'PageCtrl'
    })
 
@@ -29,7 +29,7 @@ myApp.config(function($routeProvider) {
 
    // route for the register page
    .when('/pageRegister', {
-      templateUrl : 'pageRegister.html?v=4',
+      templateUrl : 'pageRegister.html?v=5',
       controller  : 'PageCtrl'
    })
    
@@ -41,5 +41,5 @@ myApp.config(function($routeProvider) {
 });
 
 myApp.controller('PageCtrl', function() {
-    $("#monActu").load("actu.html"); 
+    $("#monActu").load("actu.html?v=5"); 
    });
