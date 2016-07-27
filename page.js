@@ -21,6 +21,12 @@ myApp.config(function($routeProvider) {
       controller  : 'PageCtrl'
    })
 
+   // route for the coordinator page
+   .when('/pageCoordinateur', {
+      templateUrl : 'http://coordinateur.concours-alkindi.fr',
+      controller  : 'PageCtrl'
+   })
+    
    // route for the previous page
    .when('/pagePrevious', {
       templateUrl : 'pagePrevious.html?v=15',
