@@ -21,6 +21,11 @@ myApp.config(function($routeProvider) {
       controller  : 'PageCtrl'
    })
 
+   // route for the previous page
+   .when('/pagePrevious', {
+      templateUrl : 'pagePrevious.html?v=15',
+      controller  : 'PageCtrl'
+   })
    // route for the who are we page
    .when('/pageWhoAreWe', {
       templateUrl : 'pageWhoAreWe.html?v=15',
