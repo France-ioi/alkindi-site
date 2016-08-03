@@ -20,16 +20,6 @@
 <body ng-controller="PageCtrl">
    <header class="header" role="banner">
       <div class="redBand">
-           <table class="menu-red-band">
-               <tr>
-                  <td class="menu-red-band menu-red-band-item linkRegister">
-                     <a href="#pageRegister">&nbsp;&rsaquo; Participer&nbsp;</a>
-                  </td>
-                  <td class="menu-red-band menu-red-band-item linkCoordinateur">
-                     <a href="http://coordinateur.concours-alkindi.fr">&nbsp;&rsaquo; Interface coordinateur&nbsp;</a>
-                  </td>
-	       </tr>
-	   </table>
       </div>
       <div class="wrappHeader">
          <section class="siteLogo">
@@ -85,6 +75,7 @@
       <section id="content" role="main">
          <article class="page">
             <section>
+               <div class="pageAndSidebarContainer">
                   <div id="social-network">
                      <div id="short_code_si_icon" style="text-align:center;">
                         <a href="https://www.facebook.com/concours-alkindi" target="_blank" title="Suivez-nous sur Facebook">
@@ -94,23 +85,20 @@
                            <img src="images/twitter.png" style="border:0px;" alt="Suivez-nous sur Twitter" height="40px" width="40px">
                         </a>
                      </div>
+                     <a href="http://coordinateur.castor-informatique.fr" target="_blank" title="Enseignants, accédez à l'interface coordinateur">Accès<br/>coordinateur</a>
                   </div>
-
-
-               <div class="pageAndSidebarContainer">
                   <div ng-view><!-- the div that display the page content --></div>
 
                </div>
             </section>
          </article>
-      </section>
-   
+      </section>   
       <div class="clear"></div>
    </div>
 
    <footer id="footer" role="contentinfo">
       <div id="copyright">
-         Concours Alkindi 2016/2017 - <a href="#/pageWhoAreWe">Contact</a> - <a href="https://goo.gl/forms/qodYVNDZA7mVnhdA3">Vous avez décrypté l'affiche</a>
+         Concours Alkindi 2016/2017 - <a href="#/pageWhoAreWe">Contact</a> - <a href="https://goo.gl/forms/qodYVNDZA7mVnhdA3" target="_blank">Vous avez décrypté l'affiche</a>
       </div>
    </footer>
 

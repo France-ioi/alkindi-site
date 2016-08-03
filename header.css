@@ -4,13 +4,12 @@ header.header {
     box-shadow: 0px 1px 5px #888888;
 }
 div.redBand {
-    height: 25px;
+    height: 30px;
     width: 100%;
     background-color: rgb(172, 26, 29);
     font-size: 16px;
     text-align: left;
     vertical-align: center;
-    padding: 10px;
     color: white;
 }
 div.wrappHeader {

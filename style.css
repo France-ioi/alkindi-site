@@ -354,6 +354,10 @@ a {
     width: 100px;
     float: right;
 }
+#social-network a {
+    color: #ac1a1d;
+	font-weight: bold;
+}
 #short_code_si_icon img {
     margin-left: 1px;
     border: 0px !important;
