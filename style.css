@@ -341,12 +341,12 @@ a {
 
 /* Footer */
 #footer {
-    height: 100px;
+    height: 60px;
     background-color: rgb(172, 26, 29);
 }
 #copyright {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 20px;
 	color: white;
 }
 #copyright a {
