@@ -347,6 +347,11 @@ a {
 #copyright {
     text-align: center;
     padding-top: 50px;
+	color: white;
+}
+#copyright a {
+	color: white;
+	text-decoration: underline;
 }
 /*other*/
 
