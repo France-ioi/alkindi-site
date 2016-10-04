@@ -39,8 +39,8 @@ myApp.config(function($routeProvider) {
    })
 
    // route for the register page
-   .when('/pageRegister', {
-      templateUrl : 'pageRegister.html?v=15',
+   .when('/pageInfosLegales', {
+      templateUrl : 'pageInfosLegales.html?v=15',
       controller  : 'PageCtrl'
    })
    
