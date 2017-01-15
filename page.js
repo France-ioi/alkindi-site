@@ -54,6 +54,18 @@ myApp.config(function($routeProvider) {
    .when('/pageVisits', {
       templateUrl : 'pageVisits.html?v=18',
       controller  : 'PageCtrl'
+   })
+
+   // route for the instruction page
+   .when('/infosTour2', {
+      templateUrl : 'infos/instructionsTour2.html?v=18',
+      controller  : 'PageCtrl'
+   })
+
+   // route for the correction page
+   .when('/correctionsTour1', {
+      templateUrl : 'infos/CorrectionsTour1.html?v=18',
+      controller  : 'PageCtrl'
    });
 });
 

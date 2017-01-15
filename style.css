@@ -386,6 +386,18 @@ a {
     opacity: 0.8;
 }
 
+.instructions {
+   margin-bottom: 50px;
+}
+
+.instructions li{
+    margin-top: 20px;
+}
+
+.instructions p{
+    margin-top: 50px;
+}
+
 /*Responsive Media Queries, 780px */
 
 @media (max-width: 780px) {
