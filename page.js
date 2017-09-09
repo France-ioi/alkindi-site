@@ -5,19 +5,19 @@ myApp.config(function($routeProvider) {
 
    // route for the main page
    .when('/', {
-      templateUrl : 'pageMain.html?v=21',
+      templateUrl : 'pageMain.html?v=22',
       controller  : 'PageCtrl'
    })
 
    // route for the dicovery page
    .when('/pageDiscover', {
-      templateUrl : 'pageDiscover.html?v=21',
+      templateUrl : 'pageDiscover.html?v=22',
       controller  : 'PageCtrl'
    })
 
    // route for the manual page
    .when('/pageManual', {
-      templateUrl : 'pageManual.html?v=21',
+      templateUrl : 'pageManual.html?v=22',
       controller  : 'PageCtrl'
    })
 
@@ -29,52 +29,52 @@ myApp.config(function($routeProvider) {
     
    // route for the previous page
    .when('/pagePrevious', {
-      templateUrl : 'pagePrevious.html?v=21',
+      templateUrl : 'pagePrevious.html?v=22',
       controller  : 'PageCtrl'
    })
    // route for the who are we page
    .when('/pageWhoAreWe', {
-      templateUrl : 'pageWhoAreWe.html?v=21',
+      templateUrl : 'pageWhoAreWe.html?v=22',
       controller  : 'PageCtrl'
    })
 
    // route for the register page
    .when('/pageInfosLegales', {
-      templateUrl : 'pageInfosLegales.html?v=21',
+      templateUrl : 'pageInfosLegales.html?v=22',
       controller  : 'PageCtrl'
    })
    
    // route for the BD page
    .when('/pageBD', {
-      templateUrl : 'pageBD.html?v=21',
+      templateUrl : 'pageBD.html?v=22',
       controller  : 'PageCtrl'
    })
 
    // route for the Visits page
    .when('/pageVisits', {
-      templateUrl : 'pageVisits.html?v=21',
+      templateUrl : 'pageVisits.html?v=22',
       controller  : 'PageCtrl'
    })
 
    // route for the instruction page
    .when('/infosTour2', {
-      templateUrl : 'infos/instructionsTour2.html?v=21',
+      templateUrl : 'infos/instructionsTour2.html?v=22',
       controller  : 'PageCtrl'
    })
 
    // route for the instruction page
    .when('/infosTour3', {
-      templateUrl : 'infos/instructionsTour3.html?v=21',
+      templateUrl : 'infos/instructionsTour3.html?v=22',
       controller  : 'PageCtrl'
    })
 
    // route for the correction page
    .when('/correctionsTour1', {
-      templateUrl : 'infos/correctionsTour1.html?v=21',
+      templateUrl : 'infos/correctionsTour1.html?v=22',
       controller  : 'PageCtrl'
    });
 });
 
 myApp.controller('PageCtrl', function() {
-    $("#monActu").load("actu.html?v=21"); 
+    $("#monActu").load("actu.html?v=22"); 
    });
