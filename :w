@@ -1,0 +1,211 @@
+<script type="text/javascript">
+changeMenuStyle('Main');
+</script>
+<div id="pageMain" class="pageContent">
+  <div id="monActu" class="registration">  
+        </div>
+
+  
+   <div class="firstBlockNextToSidebar defaultText">
+     <h1 class="pageTitle">Alkindi, c’est quoi ?</h1>
+      <p>
+         Le concours Alkindi est une compétition de cryptographie, ouverte aux classes de 4e, 3e et 2nde. Il est organisé par les associations <a href="http://www.animath.fr" target="_blank">Animath</a> et <a href="http://www.france-ioi.org" target="_blank">France-ioi</a>. La participation est entièrement gratuite.
+	 
+      </p>
+      </br>
+
+      <h1 class="leftDecorationTitle">Déroulement</h1>
+
+     <p>
+         Le concours comporte trois tours et une finale. Les meilleurs de chaque tour se qualifient pour le tour suivant&nbsp;:
+      </p>
+      <p>
+      <ul>
+           <li>Du 11 au 23 décembre : le premier tour est une épreuve de 45 minutes sur ordinateur, à laquelle on peut participer seul ou en binôme sous la surveillance d'un enseignant. Il s’agit d’une série de problèmes interactifs pour découvrir divers aspects de la cryptanalyse. L'épreuve de l'année dernière peut être testée sur <a href="http://epreuve.concours-alkindi.fr">epreuve.concours-alkindi.fr</a>.
+           <li>Du 29 janvier au 10 mars : le deuxième tour est une épreuve en ligne ouverte pendant 6 semaines, à laquelle on participe par équipes de 1 à 4 personnes, en classe ou chez soi. Plusieurs défis sont proposés, qui consistent en des messages secrets à décrypter.
+           <li>Du 22 mars au 7 avril : le troisième tour est une épreuve sur ordinateur où les participants devront comprendre et décrypter un message chiffré en une heure et demie, sous la surveillance d'un enseignant. Seule cette épreuve compte pour la sélection en finale. 
+           <li>16 mai : la finale se déroulera à Paris et consistera en une épreuve de deux heures sur papier. 
+      </ul>
+      </p>
+      <p>
+      <center>
+      Vidéo d'une visite d'un laboratoire de cryptographie par des équipes du concours :
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/EVLHEOWAORc" frameborder="0" allowfullscreen></iframe>
+      </center>
+      </p>
+      <br/>
+      <h3>Vous êtes enseignant et souhaitez inscrire vos classes ?</h3>
+      <p>
+         L'organisation est très simple. Vous pouvez à tout moment devenir coordinateur sur <a href="http://coordinateur.concours-alkindi.fr" target="_blank">coordinateur.concours-alkindi.fr</a>. Vous pouvez inscrire vos élèves jusqu'à la fin du premier tour.
+      </p>
+      <br/>
+      <h3>Vous êtes élève en 4e, 3e ou 2nde ?</h3>
+      <p>
+      L'inscription doit passer par un enseignant de votre établissement. Parlez du concours à vos enseignants et transmettez-leur l'adresse <a href="http://concours-alkindi.fr">concours-alkindi.fr</a>.
+      </p>
+   </div>
+
+   <div>
+      <img class="cartoon" src="images/Planches.png">
+      <div class="defaultText">
+         <p>
+            Aujourd’hui, les questions de sécurité des données sont un des enjeux majeur de notre société, que ce soit pour protéger les transactions bancaires ou garantir la protection de la vie privée. Tout cela est rendu possible grâce aux mathématiques et à l’informatique.
+         </p>
+         <p>
+            Nous souhaitons faire découvrir aux lycéens cette application très concrète des mathématiques, qui joue un rôle énorme dans leur vie quotidienne. Nous voulons leur montrer qu’il est possible de prendre du plaisir en faisant des mathématiques. Enfin, nous souhaitons les sensibiliser à la question importante de la
+            <br>
+            sécurité de l’information.
+         </p>
+         <p>Ce concours rentre dans le cadre de la Stratégie mathématiques et du plan École numérique du Ministère de l’Éducation nationale.</p>
+      </div>
+   </div>
+
+   <div>
+      <div class="arabesqueTitle">
+         Qui peut participer ?
+      </div>
+      <div class="arabesqueSubTitle">
+         Tous les élèves scolarisés en seconde, troisième ou quatrième<br/>
+         dans un établissement français.
+      </div>
+      <div class="blocObjectifs defaultText">
+         <div class="blocQuiPeut">
+            <div class="squareTitle squareTitleGauche squareTitleFixeHeight">
+               Je n'ai jamais fait de crypto. C'est grave ?
+            </div>
+            <p>
+               Pas du tout. Au contraire, c’est le principe ! Ce concours s’adresse à des gens qui n’ont jamais fait de cryptanalyse. Lors des épreuves en temps limité, toutes les informations nécessaires seront contenues dans le sujet.
+            </p>
+         </div>
+         <div class="blocQuiPeut blocQuiPeutDroit">
+            <div class="squareTitle squareTitleDroit squareTitleFixeHeight">
+               Est ce que c'est difficile ?
+            </div>
+            <p>
+               Le concours est accessible à tous les élèves de seconde, troisième et quatrième. Lors de la première épreuve, ouverte à tous, chaque question comporte trois niveaux de difficulté. Ainsi, chaque participant peut s’amuser à résoudre des défis adaptés à son niveau. La difficulté augmente lors des tours suivants
+            </p>
+         </div>
+         <div class="blocQuiPeut">
+            <div class="squareTitle squareTitleGauche squareTitleFixeHeight">
+               Mais il faut quand même  être bon en maths ?
+            </div>
+            <p>
+               Pas nécessairement, certains problèmes font appel à certaines notions de fin de collège, mais les mathématiques ne sont pas la principale difficulté.
+            </p>
+         </div>
+         <div class="blocQuiPeut blocQuiPeutDroit">
+            <div class="squareTitle squareTitleDroit squareTitleFixeHeight">
+               Alors qu’est-ce qu’il  faut savoir ?
+            </div>
+            <p>
+               Il n’y a pas de prérequis autres que le programme de collège. Venez avec l’esprit ouvert, faites preuve de logique et suivez les consignes. Et surtout amusez vous ! 
+            </p>
+         </div>
+      </div>
+   </div>
+
+   <div>
+      <div class="arabesqueTitle">
+         Qu'est ce qu’on gagne
+      </div>
+      <div class="defaultText">
+         <p>
+         La première équipe se verra offrir un ordinateur portable par personne.<br/>
+         Les seconds gagneront des tablettes tactiles, les troisièmes des smartphones.<br/>
+         Les membres des 20 meilleures équipes nationales ainsi que de la meilleure équipe de chaque académie gagneront des livres et une <a href="#pageVisits">invitation</a> à visiter un laboratoire de cryptographie.
+         </p>
+         <p>
+         Les équipes finalistes seront conviées à une cérémonie officielle de remise des prix à Paris.
+         </p>
+      </div>
+   </div>
+
+
+      <div>
+      <div class="arabesqueTitle">
+         Le parrain
+      </div>
+           <div style="float:left;padding:10px;padding-right:30px">
+        <img src="images/gerard-berry.jpeg" width="120">
+      </div>
+	  </br>
+      <p>
+	<strong>Gérard Berry</strong> est professeur au Collège de France, où il tient la chaire Algorithmes, machines et langages depuis 2012, après y avoir tenu deux chaires annuelles en 2007-2008 et 2009-2010. Il est également membre de l'Académie des sciences depuis 2002, de l'Académie des technologies depuis 2005,  et lauréat de la médaille d'or du CNRS en 2014. Chercheur à l'Ecole des Mines et à l'Inria depuis 1972 il s'intéresse à la logique mathématique et développe à partir de 1982 le langage de programmation Esterel, qui permet de programmer et de certifier le comportement de systèmes complexes (par exemple programmes qui pilotent les avions).  Entre 2001 et 2009, il est directeur scientifique d'Esterel Technologies, entreprise créée par des chercheurs, avant de rejoinde l'Inria comme directeur de recherche et président de sa Commission d'évaluation. Il participe activement à la promotion de l'informatique.</p>
+</p>
+      <br/>
+
+      <p>
+      <center>
+      Gérard Berry a eu la gentillesse de nous donner un petit interview :
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4i-4JlKPC6I" frameborder="0" allowfullscreen></iframe>
+      </center>
+      </p>
+
+
+      <h3>Vous êtes enseignant et souhaitez inscrire vos classes ?</h3>
+      <p>
+         L'organisation est très simple. Vous pouvez à tout moment devenir coordinateur sur <a href="http://coordinateur.concours-alkindi.fr" target="_blank">coordinateur.concours-alkindi.fr</a>. Vous pouvez inscrire vos élèves jusqu'à la fin du premier tour.
+      </p>
+      <br/>
+      <h3>Vous êtes élève en 4e, 3e ou 2nde ?</h3>
+      <p>
+      L'inscription doit passer par un enseignant de votre établissement. Parlez du concours à vos enseignants et transmettez-leur l'adresse <a href="http://concours-alkindi.fr">concours-alkindi.fr</a>.
+      </p>
+</br>
+
+	</div>
+
+
+
+   <div>
+      <div class="arabesqueTitle">
+         L'affiche
+      </div>
+       <p>
+            Pour faire connaître le concours dans votre établissement, n'hésitez pas à imprimer et diffuser notre affiche :
+           </p>
+           <div class="defaultText">
+           <div style="float:left;padding:10px;padding-right:30px">
+             <a href="images/Affiche-Alkindi-2018-Web.jpg" target="_blank"><img src="images/Affiche-Alkindi-2018-small.jpg" height="500" /></a>
+           </div>
+           <p>
+           <br/><br/><br/>
+           Versions en pdf à imprimer :
+           </p>
+           <p>
+           <a href="docs/Affiche-Alkindi-2018-profA4couleur.pdf" target="_blank">Format A4 couleur (8Mo)</a>
+           </p>
+           <p>
+           <a href="docs/Affiche-Alkindi-2018-profA4nb.pdf" target="_blank">Format A4 noir&blanc (8Mo)</a>
+           </p>
+           <p>
+           <a href="docs/Affiche-Alkindi-2018-profA3couleur.pdf" target="_blank">Format A3 couleur (8Mo)</a>
+           </p>
+           <p>
+           <a href="docs/Affiche-Alkindi-2018-profA3nb.pdf" target="_blank">Format A3 noir&blanc (8Mo)</a>
+           </p>
+           <p>
+           <a href="docs/Affiche-Alkindi_2018-imprimeur-A2couleur.pdf" target="_blank">Format A2 ou plus grand en couleur (8Mo)</a>
+           </p>
+           <p style="clear:both">Vous pouvez également relire la <a href="#pageBD">bande dessinée</a> associée au concours.</p>
+               </div>
+  </br>
+          
+          
+      <div>
+         <div class="arabesqueTitle">
+                Qui était Al Kindi ?
+                </div>
+         <div class="defaultText">
+        
+             </br>
+            <p>
+                           Al Kindi est un savant arabe du IXe siècle qui s’est intéressé à de nombreuses sciences allant de la géométrie à la médecine et à la chimie. Dans le « Manuscrit sur le chiffrement des messages cryptographiques » il explique comment casser les meilleurs codes connus à son époque, à l’aide de la technique de l’analyse de fréquence. C’est la première trace connue de cryptanalyse. Par conséquent, il est considéré comme l’un des fondateurs de la discipline.
+            </p>
+
+         </div>
+  </br>
+  </br>
+  </br>
+
+</div>
