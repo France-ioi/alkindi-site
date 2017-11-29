@@ -55,6 +55,9 @@ table.menu tr td {
     text-transform: uppercase;
     padding-bottom: 10px;
 }
+.menu a {
+  padding: 0 5px;
+}
 .menu-item a:hover {
     background-color: #F4D5D5;
 }

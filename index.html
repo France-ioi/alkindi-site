@@ -5,7 +5,6 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
    <title>Concours Alkindi</title>
-   <link rel="stylesheet" type="text/css" href="header.css">
    <link rel="stylesheet" type="text/css" href="banner.css">
    <link rel="stylesheet" type="text/css" href="registration.css">
    <link rel="stylesheet" type="text/css" href="style.css">
@@ -16,83 +15,48 @@
    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
    <script type="text/javascript" SRC="functions.js"></script>
    <script type="text/javascript" SRC="page.js?v=23"></script>
+   <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
 </head>
 <body ng-controller="PageCtrl">
    <header class="header" role="banner">
-      <div class="redBand">
-      </div>
-      <div class="wrappHeader">
-         <section class="siteLogo">
+      <div class="headerContent">
+         <div class="subHeader">
+            <a href="https://www.facebook.com/concours-alkindi" target="_blank" title="Suivez-nous sur Facebook" class="fr mrm">
+               <img src="images/facebook_black.png" alt="Suivez-nous sur Facebook" height="20px" width="20px">
+            </a>
+            <a href="http://www.twitter.com/ConcoursAlKindi" target="_blank" title="Suivez-nous sur Twitter" class="fr">
+               <img src="images/twitter_black.png" alt="Suivez-nous sur Twitter" height="20px" width="20px">
+            </a>
+         </div>
+         <div class="siteLogo">
             <div class="siteTitle">
-               Concours&nbsp;&nbsp;&nbsp;Alkindi&nbsp;
+               Concours&nbsp;<img src="images/logo.png" width="90" height="90" />&nbsp;Alkindi
             </div>
-         </section>
+         </div>
          <nav id="menu" role="navigation">
-            <table class="menu showBig">
-               <tr>
-                  <td class="menu-item current-menu-item linkMain">
-                     <a href="#">&nbsp;Accueil&nbsp;</a>
-                  </td>
-                  <td class="menu-item linkManual">
-                     <a href="#pageManual">&nbsp;Manuel&#65279;&#8197;&#8203;&#8197;&#65279;du&#65279;&#8197;&#8203;&#8197;&#65279;concours&nbsp;</a>
-                  </td>
-                  <td class="menu-item linkPrevious">
-                     <a href="#pagePrevious">&nbsp;Les épreuves précédentes&nbsp;</a>
-                  </td>
-                  <td class="menu-item linkDiscover">
-                     <a href="#pageDiscover">&nbsp;Découvrir&#65279;&#8197;&#8203;&#8197;&#65279;la&#65279;&#8197;&#8203;&#8197;&#65279;crypto&nbsp;</a>
-                  </td>
-                  <td class="menu-item linkWhoAreWe">
-                     <a href="#pageWhoAreWe">&nbsp;Qui&#65279;&#8197;&#8203;&#8197;&#65279;sommes-nous&nbsp;?</a>
-                  </td>
-               </tr>                 
-			
-            </table>
-            <table class="menu showSmall">
-               <tr>
-                  <td class="menu-item current-menu-item linkMain">
-                     <a href="#">&nbsp;Accueil&nbsp;</a>
-                  </td>
-                  <td class="menu-item linkManual">
-                     <a href="#pageManual">&nbsp;Manuel&#65279;&#8197;&#8203;&#8197;&#65279;du&#65279;&#8197;&#8203;&#8197;&#65279;concours&nbsp;</a>
-                  </td>
-                  <td class="menu-item current-menu-item linkPrevious">
-                     <a href="#pagePrevious">&nbsp;Les épreuves précédentes&nbsp;</a>
-                  </td>
-                  <td class="menu-item linkDiscover">
-                     <a href="#pageDiscover">&nbsp;Découvrir&#65279;&#8197;&#8203;&#8197;&#65279;la&#65279;&#8197;&#8203;&#8197;&#65279;crypto&nbsp;</a>
-                  </td>
-                  <td class="menu-item linkWhoAreWe">
-                     <a href="#pageWhoAreWe">&nbsp;Qui&#65279;&#8197;&#8203;&#8197;&#65279;sommes-nous&nbsp;?</a>
-                  </td>
-               </tr>
-            </table>
+            <ul ng-controller='activeMenuItem'>
+               <li ng-class="{active: isActive('/')}">
+                  <a href="#/">Accueil</a>
+               </li><li ng-class="{active: isActive('/pageManual')}">
+                  <a href="#/pageManual">Manuel du concours</a>
+               </li><li ng-class="{active: isActive('/pagePrevious')}">
+                  <a href="#/pagePrevious">Les épreuves précédentes</a>
+               </li><li ng-class="{active: isActive('/pageDiscover')}">
+                  <a href="#/pageDiscover">Découvrir la crypto</a>
+               </li><li ng-class="{active: isActive('/enseignants')}">
+                  <a href="#/enseignants">Enseignants</a>
+               </li><li ng-class="{active: isActive('/pageWhoAreWe')}">
+                  <a href="#/pageWhoAreWe">Qui sommes-nous ?</a>
+               </li>
+            </ul>
          </nav>
       </div>
    </header>
 
-   <div class="mainContainer">
-      <section id="content" role="main">
-         <article class="page">
-            <section>
-               <div class="pageAndSidebarContainer">
-                  <div id="social-network">
-                     <div id="short_code_si_icon" style="text-align:center;">
-                        <a href="https://www.facebook.com/concours-alkindi" target="_blank" title="Suivez-nous sur Facebook">
-                           <img src="images/facebook.png" style="border:0px;" alt="Suivez-nous sur Facebook" height="40px" width="40px">
-                        </a>
-                        <a href="http://www.twitter.com/ConcoursAlKindi" target="_blank" title="Suivez-nous sur Twitter">
-                           <img src="images/twitter.png" style="border:0px;" alt="Suivez-nous sur Twitter" height="40px" width="40px">
-                        </a>
-                     </div>
-                     <a href="http://coordinateur.concours-alkindi.fr" target="_blank" title="Enseignants, accédez à l'interface coordinateur">Accès<br/>coordinateur</a>
-                  </div>
-                  <div ng-view><!-- the div that display the page content --></div>
-
-               </div>
-            </section>
-         </article>
-      </section>   
+   <div class="mainContainer" id="content" role="main">
+      <div ng-view autoscroll="true"><!-- the div that display the page content --></div>
       <div class="clear"></div>
    </div>
 

@@ -26,7 +26,7 @@ myApp.config(function($routeProvider) {
       templateUrl : 'http://coordinateur.concours-alkindi.fr',
       controller  : 'PageCtrl'
    })
-    
+
    // route for the previous page
    .when('/pagePrevious', {
       templateUrl : 'pagePrevious.html?v=23',
@@ -38,12 +38,18 @@ myApp.config(function($routeProvider) {
       controller  : 'PageCtrl'
    })
 
+   // route for the coordinators / teachers page
+   .when('/enseignants', {
+      templateUrl : 'enseignants.html?v=23',
+      controller  : 'PageCtrl'
+   })
+
    // route for the register page
    .when('/pageInfosLegales', {
       templateUrl : 'pageInfosLegales.html?v=23',
       controller  : 'PageCtrl'
    })
-   
+
    // route for the BD page
    .when('/pageBD', {
       templateUrl : 'pageBD.html?v=23',
@@ -72,9 +78,28 @@ myApp.config(function($routeProvider) {
    .when('/correctionsTour1', {
       templateUrl : 'infos/correctionsTour1.html?v=23',
       controller  : 'PageCtrl'
+   })
+
+   .otherwise({
+      redirectTo: '/'
    });
 });
 
 myApp.controller('PageCtrl', function() {
-    $("#monActu").load("actu.html?v=23"); 
-   });
+    $("#monActu").load("actu.html?v=23");
+});
+
+myApp.controller('activeMenuItem', function($scope, $location){
+   $scope.isActive = function (viewLocation) {
+     return viewLocation === $location.path();
+   };
+});
+
+myApp.controller('VideoDisplay', function($scope, $sce) {
+   $scope.displayPlayer = false;
+   $scope.loadVideo = function (item) {
+      $scope.videoUrl = $sce.trustAsResourceUrl(item.currentTarget.getAttribute('data-source'));
+      $scope.displayPlayer = true;
+   };
+
+});
