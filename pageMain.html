@@ -110,8 +110,11 @@
     <div class="section">
       <div ng-controller="VideoDisplay">
         <h2>Vidéos</h2>
-        <ul class="three-cols-list clickable">
+        <ul class="two-cols-list clickable">
+          <li ng-click="loadVideo($event)" data-source="https://www.youtube.com/embed/f_y6mJPvlIA"><img src="images/vignetteVideo_lancement.png" /><div>Lancement de la 3e édition du concours Alkindi</div></li>
           <li ng-click="loadVideo($event)" data-source="https://www.youtube.com/embed/4i-4JlKPC6I"><img src="images/vignetteVideo_gerardBerry.jpg" /><div>Interview de Gérard Berry, parrain du concours Alkindi</div></li>
+	  </ul>
+          <ul class="two-cols-list clickable">
           <li ng-click="loadVideo($event)" data-source="https://www.youtube.com/embed/EVLHEOWAORc"><img src="images/vignetteVideo_visites.jpg" /><div>Visite d'un laboratoire de cryptographie par des équipes du concours</div></li>
           <li ng-click="loadVideo($event)" data-source="https://www.youtube.com/embed/CZbTjvSRZhM"><img src="images/vignetteVideo_science4all.jpg" /><div>Lê, auteur de la chaîne Youtube Science4all, a rencontré les lauréats d'une académie</div></li>
         </ul>

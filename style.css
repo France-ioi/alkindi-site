@@ -293,6 +293,23 @@ h3 {
 .three-cols-list img {
     max-width: 100%;
 }
+.two-cols-list {
+    margin-left: 0;
+}
+.two-cols-list li {
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+    vertical-align: top;
+    position: relative;
+    padding: 20px;
+}
+.two-cols-list.clickable {
+    cursor: pointer;
+}
+.two-cols-list img {
+    max-width: 100%;
+}
 .mainContainer {position: relative;}
 
 #homeVisual {
