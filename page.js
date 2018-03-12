@@ -1,5 +1,5 @@
 var myApp = angular.module('alkindi', ['ngRoute']);
-var version = 29;
+var version = 32;
 myApp.config(function($routeProvider) {
    $routeProvider
 
