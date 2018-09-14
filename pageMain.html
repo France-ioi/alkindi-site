@@ -117,8 +117,8 @@
       <p>Versions en pdf à imprimer :</p>
       <p><a href="docs/Affiche-Alkindi-2019-professeur-A4couleur.pdf" target="_blank">Format A4 couleur (16Mo)</a></p>
       <p><a href="docs/Affiche-Alkindi-2019-professeur-A4-nb.pdf" target="_blank">Format A4 noir&blanc (4Mo)</a></p>
-      <!--<p><a href="docs/Affiche-Alkindi-2019-imprimeur-A3couleur.pdf" target="_blank">Format A3 couleur (2Mo)</a></p>-->
       <p><a href="docs/Affiche-Alkindi-2019-professeur-A3-nb.pdf" target="_blank">Format A3 noir&blanc (14Mo)</a></p>
+      <p><a href="https://drive.google.com/a/animath.fr/file/d/1tGMA_VakszEwqBUSOBwdQHH4Ja_hOmEG/view?usp=sharing" target="_blank">Format A3 noir&blanc (50Mo)</a></p>
       <p>L'affiche contient 4 énigmes à déchiffrer !</p>
       <p style="clear:both">Vous pouvez également relire la <a href="#pageBD">bande dessinée</a> associée au concours.</p>
     </div>
@@ -127,6 +127,7 @@
       <div ng-controller="VideoDisplay">
         <h2>Vidéos</h2>
         <ul class="two-cols-list clickable">
+	  <li ng-click="loadVideo($event)" data-source="https://www.youtube.com/embed/f_y6mJPvlIA"><img src="images/vignetteVideo_lancement.jpg" /><div>Lancement de la 3e édition du concours Alkindi</div></li>
           <li ng-click="loadVideo($event)" data-source="https://www.youtube.com/embed/f_y6mJPvlIA"><img src="images/vignetteVideo_lancement.jpg" /><div>Lancement de la 3e édition du concours Alkindi</div></li>
           <li ng-click="loadVideo($event)" data-source="https://www.youtube.com/embed/ioxT4H7Kx6M"><img src="images/vignetteVideo_participants.jpg" /><div>Témoignages de participant·e·s au 1er tour du concours 2017-2018</div></li>
           </ul>
