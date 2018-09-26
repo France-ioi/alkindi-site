@@ -62,11 +62,11 @@ table.menu tr td {
     background-color: #F4D5D5;
 }
 .current-menu-item a {
-    background-color: #AC1A1D;
+    background-color: #ed1846;
     color: white;
 }
 .current-menu-item a:hover {
-    background-color: #AC1A1D;
+    background-color: #ed1846;
     color: white;
 }
 table.menu-red-band {
