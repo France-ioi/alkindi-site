@@ -54,6 +54,14 @@ table {
 .clear {
     clear: both
 }
+.hidden {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
 
 /*
 *
@@ -70,7 +78,7 @@ body {
    line-height: 1.5;
 }
 a {
-    color: #ac1a1d;
+    color: #ed1846;
     text-decoration: underline;
 }
 strong {
@@ -172,11 +180,14 @@ p, ul {
 .subHeader {
     height: 30px;
     width: 100%;
-    background-color: rgb(172, 26, 29);
+    background-color: #ed1846;
     font-size: 16px;
     text-align: left;
     vertical-align: center;
     color: white;
+}
+.subHeader a img {
+    filter: invert(1);
 }
 .siteLogo {
     padding-top: 10px;
@@ -198,8 +209,8 @@ p, ul {
         word-spacing: 10px;
     }
     .siteTitle img {
-        width: 70px;
-        height: 70px;
+        width: 250px;
+        height: 150px;
     }
 }
 
@@ -225,7 +236,7 @@ p, ul {
     background-color: #F4D5D5;
 }
 #menu li.active a {
-    background-color: #ac1a1d;
+    background-color: #ed1846;
     color: #fff;
 }
 
@@ -243,7 +254,7 @@ h1 {
     margin-top: 1em;
     margin-right: 20px;
     font-size: 48px;
-    color: #AC1A1D;
+    color: #ed1846;
     text-align: center;
     margin-bottom: 1em;
 }
@@ -251,7 +262,7 @@ h2 {
     margin-top: 1em;
     font-weight: normal;
     font-size: 2em;
-    color: #ac1a1d;
+    color: #ed1846;
     margin-bottom: 0;
     line-height: 1;
 }
@@ -338,7 +349,7 @@ h3 {
     text-align: center;
 }
 #monActu a {
-    color: #ac1a1d;
+    color: #ed1846;
 }
 
 
@@ -360,7 +371,7 @@ h3 {
 */
 #footer {
     height: 60px;
-    background-color: #ac1a1d;
+    background-color: #ed1846;
     margin-top: 40px;
 }
 #copyright {
@@ -377,7 +388,7 @@ h3 {
 .titreActu {
     width: 100%;
     font-size: 30px;
-    color: #ac1a1d;
+    color: #ed1846;
     padding-top: 20px;
     text-align: right;
 }
@@ -387,12 +398,12 @@ h3 {
 }
 .widgetActu h3 {
     font-size: 24px;
-    color: #ac1a1d;
+    color: #ed1846;
 }
 .counterBlock {
     text-align: center;
     clear: both;
-    background-color: #ac1a1d;
+    background-color: #ed1846;
     color: #fff;
     padding-bottom: 8px;
     margin-top: 20px;
@@ -419,8 +430,8 @@ h3 {
     float: right;
 }
 #social-network a {
-    color: #ac1a1d;
-	font-weight: bold;
+    color: #ed1846;
+    font-weight: bold;
 }
 #short_code_si_icon img {
     margin-left: 1px;
