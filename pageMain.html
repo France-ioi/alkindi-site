@@ -124,18 +124,15 @@
     </div>
 
     <div class="section">
-      <div ng-controller="VideoDisplay">
-        <h2>Vidéos</h2>
-        <ul class="two-cols-list clickable">
-          <li ng-click="loadVideo($event)" data-source="https://www.youtube.com/embed/f_y6mJPvlIA"><img src="images/vignetteVideo_lancement.jpg" /><div>Lancement de la 3e édition du concours Alkindi</div></li>
-          <li ng-click="loadVideo($event)" data-source="https://www.youtube.com/embed/ioxT4H7Kx6M"><img src="images/vignetteVideo_participants.jpg" /><div>Témoignages de participant·e·s au 1er tour du concours 2017-2018</div></li>
-          </ul>
-          <ul class="three-cols-list clickable">
-          <li ng-click="loadVideo($event)" data-source="https://www.youtube.com/embed/4i-4JlKPC6I"><img src="images/vignetteVideo_gerardBerry.jpg" /><div>Interview de Gérard Berry, parrain du concours Alkindi</div></li>
-	  <li ng-click="loadVideo($event)" data-source="https://www.youtube.com/embed/EVLHEOWAORc"><img src="images/vignetteVideo_visites.jpg" /><div>Visite d'un laboratoire de cryptographie par des équipes du concours</div></li>
-          <li ng-click="loadVideo($event)" data-source="https://www.youtube.com/embed/CZbTjvSRZhM"><img src="images/vignetteVideo_science4all.jpg" /><div>Lê, auteur de la chaîne Youtube Science4all, a rencontré les lauréat·e·s d'une académie</div></li>
+      <h2>Vidéos</h2>
+      <div ng-controller="VideosLists" class="videos">
+        <ul class="videosList">
+          <li ng-repeat="video in videosPresentation" ng-click='setActiveItem(video)' ng-class='activeItem==video ? "active" : ""'>
+            <div ng-if='activeItem==video'><iframe width="800" height="450" ng-src="{{video.source | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe></div>
+            <img ng-show='activeItem!==video' src="{{video.thumbnail}}">
+            <div>{{video.title}}</div>
+          </li>
         </ul>
-        <div ng-if="displayPlayer" style="text-align:center"><iframe width="800" height="450" src="{{videoUrl}}" frameborder="0" allowfullscreen></iframe></div>
       </div>
     </div>
 

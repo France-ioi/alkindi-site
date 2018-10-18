@@ -349,11 +349,27 @@ h3 {
 #monActu a {
     color: #ed1846;
 }
-
-
-
-
-
+/* Videos */
+.videos ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.videos li {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    margin: 10px;
+    font-size: 0.875em;
+}
+.videos li.active {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.videos img {
+    max-width: 100%;
+}
 .cartoon {
     height: 350px;
     margin-top: 10px;

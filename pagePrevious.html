@@ -11,22 +11,22 @@
       <h2>Corrections vidéos des épreuves précédentes</h2>
       <p>Regardez les vidéos de corrections des exercices du premier tour 2017-2018 sur la chaîne Youtube d'Inria !</p>
     </div>
-    <div class="section">
-      	<div ng-controller="VideoDisplay">
-	    <h2>Vidéos</h2>
-      <ul class="two-cols-list clickable">
-	 <li ng-click="loadVideo($event)" data-source="https://www.youtube.com/embed/Mv415zfUFNs"><img src="images/Miniature-vidéo-Matthieu.JPG" /><div>Exercice "Réseau" corrigé par Matthieu Lequesne</div></li>
-         <li ng-click="loadVideo($event)" data-source="https://www.youtube.com/embed/8ohEeTPKBwA"><img src="images/Miniature-vidéo-Anne-Canteaut.JPG" /><div>Exercice "Connexions" corrigé par Anne Canteaut</div></li>
-         <li ng-click="loadVideo($event)" data-source="https://www.youtube.com/embed/8DQtOH1WwBs"><img src="images/Miniature-vidéo-Razvan.JPG" /><div>Exercice "Aliens" corrigé par Razvan Barbulescu</div></li>
-         <li ng-click="loadVideo($event)" data-source="https://www.youtube.com/embed/Y-VQBzwEaqQ"><img src="images/Miniature-vidéo-Christina.JPG" /><div>Exercice "Générateur" corrigé par Christina Boura</div></li>
-         <li ng-click="loadVideo($event)" data-source="https://www.youtube.com/embed/qturJa6f97M"><img src="images/Miniature-vidéo-Aline-Gouget.JPG" /><div>Exercice "Coffre fort" corrigé par Aline Gouget</div></li>
-</ul>
-        <div ng-if="displayPlayer" style="text-align:center"><iframe width="800" height="450" src="{{videoUrl}}" frameborder="0" allowfullscreen></iframe></div>
-        </div>
-	    </div>
 
-      <div class="section">
-	  <p>Les coordinateurs/coordinatrices ont accès à l'ensemble des résultats de leurs équipes sur leur <a href="http://coordinateur.concours-alkindi.fr" target="_blank" >interface</a>.</p>
+    <div class="section">
+	    <h2>Vidéos</h2>
+      <div ng-controller="VideosLists" class="videos">
+        <ul class="videosList">
+          <li ng-repeat="video in videosPreviousContests" ng-click='setActiveItem(video)' ng-class='activeItem==video ? "active" : ""'>
+            <div ng-if='activeItem==video'><iframe width="800" height="450" ng-src="{{video.source | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe></div>
+            <img ng-show='activeItem!==video' src="{{video.thumbnail}}">
+            <div>{{video.title}}</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <p>Les coordinateurs/coordinatrices ont accès à l'ensemble des résultats de leurs équipes sur leur <a href="http://coordinateur.concours-alkindi.fr" target="_blank" >interface</a>.</p>
       <p>Les sujets de la finale sont <a target="new" href="docs/Sujets-finale-Alkindi-2018.pdf">accessibles ici</a>.
       </p>
     </div>
