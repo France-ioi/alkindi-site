@@ -1,4 +1,4 @@
-function compte_a_rebours()
+/*function compte_a_rebours()
 {
    var prefix = document.getElementById("compte_a_rebours_prefix");
    var compte_a_rebours = document.getElementById("compte_a_rebours");
@@ -41,4 +41,55 @@ function compte_a_rebours()
    }
    var actualisation = setTimeout("compte_a_rebours();", 100000);
 }
-compte_a_rebours();
+compte_a_rebours();*/
+
+/***
+Countdown from https://codepen.io/garethdweaver/pen/eNpWBb
+*/
+
+myApp.directive('countdown',
+   ['Util','$interval', function(Util, $interval) {
+      return {
+        restrict: 'A',
+        scope: {
+          date: '@'
+        },
+        link: function(scope, element) {
+          var future = new Date(scope.date);
+          function updateCountdown() {
+            var diff = Math.floor((future.getTime() - new Date().getTime()) / 1000);
+            element.html(Util.dhms(diff));
+          }
+          updateCountdown();
+          $interval(updateCountdown, 1000);
+        }
+      };
+   }]).factory('Util', [function() {
+      return {
+         dhms: function(t) {
+            var days, hours, minutes, seconds;
+            days = Math.floor(t / 86400);
+            t -= days * 86400;
+            hours = Math.floor(t / 3600) % 24;
+            t -= hours * 3600;
+            minutes = Math.floor(t / 60) % 60;
+            t -= minutes * 60;
+            seconds = t % 60;
+            function pad2(n) {
+               if (n >= 0 && n < 100) {
+                  return (100 + n).toString().substr(1, 2);
+               }
+               return n.toString();
+            }
+            var html = '<div class="countdown">';
+            if (days) {
+               html += '<span class="bloc-time days"><span class="value">' + pad2(days) + '</span><span class="unit">jours</span></span>';
+            }
+            html += '<span class="bloc-time hours"><span class="value">' + pad2(hours) + '</span><span class="unit">heures</span></span>';
+            html += '<span class="bloc-time mins"><span class="value">' + pad2(minutes) + '</span><span class="unit">minutes</span></span>';
+            html += '<span class="bloc-time secs"><span class="value">' + pad2(seconds) + '</span><span class="unit">secondes</span></span>';
+            return html;
+         }
+      };
+   }]
+);
