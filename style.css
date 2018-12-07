@@ -349,6 +349,19 @@ h3 {
 #monActu a {
     color: #ed1846;
 }
+.mainTeaser {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+}
+
 /* Videos */
 .videos ul {
     list-style: none;
