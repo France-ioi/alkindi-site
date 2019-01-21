@@ -338,13 +338,23 @@ h3 {
     }
 }
 #monActu ul {
-    margin: 0 auto;
-    padding: 10px;
+    list-style: none;
+    margin: 0px auto;
+    padding: 10px 30px 10px;
     background-color: #ececec;
     background-color: rgba(236,236,236,0.85);
     box-shadow: 2px 2px 4px #ccc;
     border: 1px solid #ccc;
-    text-align: center;
+    text-align: left;
+}
+#monActu li{
+  margin: 5px 0;
+}
+#monActu ul > li:before {
+  color: #ed1846;
+  content: "–"; /* en dash */
+  position: absolute;
+  margin-left: -1.1em; 
 }
 #monActu a {
     color: #ed1846;
