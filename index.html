@@ -18,7 +18,7 @@
    <link rel="stylesheet" type="text/css" href="rebours.css">
    <script type="text/javascript" src="rebours.js"></script>
    <script>
-   if(window.location.protocol != 'https:') {
+   if ((window.location.protocol != 'https:') && (window.location.hostname != '127.0.0.1')){
      try {
        var xhr = new XMLHttpRequest();
        xhr.onload = function() {
