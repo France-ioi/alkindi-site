@@ -1,5 +1,5 @@
 var myApp = angular.module('alkindi', ['ngRoute']);
-var version = 57;
+var version = 62;
 myApp.config(function($routeProvider) {
    $routeProvider
 
@@ -65,6 +65,12 @@ myApp.config(function($routeProvider) {
    // route for the instruction page
    .when('/infosTour2', {
       templateUrl : 'infos/instructionsTour2.html?v=' + version,
+      controller  : 'PageCtrl'
+   })
+
+   // route for the instruction page
+   .when('/infosTour2Suisse', {
+      templateUrl : 'infos/instructionsTour2Suisse.html?v=' + version,
       controller  : 'PageCtrl'
    })
 
