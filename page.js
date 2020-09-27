@@ -114,11 +114,6 @@ myApp.controller('VideosLists', function($scope) {
          thumbnail: 'images/vignetteVideo_participants.jpg'
       },
       {
-         title: 'Interview de Gérard Berry, parrain du concours Alkindi',
-         source: 'https://www.youtube.com/embed/4i-4JlKPC6I',
-         thumbnail: 'images/vignetteVideo_gerardBerry.jpg'
-      },
-      {
          title: 'Visite d\'un laboratoire de cryptographie par des équipes du concours',
          source: 'https://www.youtube.com/embed/EVLHEOWAORc',
          thumbnail: 'images/vignetteVideo_visites.jpg'
