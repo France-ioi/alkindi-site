@@ -128,27 +128,27 @@ myApp.controller('VideosLists', function($scope) {
       {
          title: 'Exercice "Réseau" corrigé par Matthieu Lequesne',
          source: 'https://www.youtube.com/embed/Mv415zfUFNs',
-         thumbnail: 'images/Miniature-vidéo-Matthieu.JPG'
+         thumbnail: 'images/miniatures_videos/matthieu_lequesne.jpg'
       },
       {
          title: 'Exercice "Connexions" corrigé par Anne Canteaut',
          source: 'https://www.youtube.com/embed/8ohEeTPKBwA',
-         thumbnail: 'images/Miniature-vidéo-Anne-Canteaut.JPG'
+         thumbnail: 'images/miniatures_videos/anne_canteaut.jpg'
       },
       {
          title: 'Exercice "Aliens" corrigé par Razvan Barbulescu',
          source: 'https://www.youtube.com/embed/8DQtOH1WwBs',
-         thumbnail: 'images/Miniature-vidéo-Razvan.JPG'
+         thumbnail: 'images/miniatures_videos/razvan_barbulescu.jpg'
       },
       {
          title: 'Exercice "Générateur" corrigé par Christina Boura',
          source: 'https://www.youtube.com/embed/Y-VQBzwEaqQ',
-         thumbnail: 'images/Miniature-vidéo-Christina.JPG'
+         thumbnail: 'images/miniatures_videos/christina_boura.jpg'
       },
       {
          title: 'Exercice "Coffre fort" corrigé par Aline Gouget',
          source: 'https://www.youtube.com/embed/qturJa6f97M',
-         thumbnail: 'images/Miniature-vidéo-Aline-Gouget.JPG'
+         thumbnail: 'images/miniatures_videos/aline_gouget.jpg'
       }
    ];
    $scope.setActiveItem = function(item) {
