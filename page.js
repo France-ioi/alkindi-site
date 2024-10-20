@@ -106,22 +106,22 @@ myApp.controller('VideosLists', function($scope) {
       {
          title: 'Lancement de la 3e édition du concours Alkindi',
          source: 'https://www.youtube.com/embed/f_y6mJPvlIA',
-         thumbnail: 'images/vignetteVideo_lancement.jpg'
+         thumbnail: 'images/miniatures_videos/vignetteVideo_lancement.jpg'
       },
       {
          title: 'Témoignages de participants au 1er tour du concours 2017-2018',
          source: 'https://www.youtube.com/embed/ioxT4H7Kx6M',
-         thumbnail: 'images/vignetteVideo_participants.jpg'
+         thumbnail: 'images/miniatures_videos/vignetteVideo_participants.jpg'
       },
       {
          title: 'Visite d\'un laboratoire de cryptographie par des équipes du concours',
          source: 'https://www.youtube.com/embed/EVLHEOWAORc',
-         thumbnail: 'images/vignetteVideo_visites.jpg'
+         thumbnail: 'images/miniatures_videos/vignetteVideo_visites.jpg'
       },
       {
          title: 'Lê, auteur de la chaîne Youtube Science4all, a rencontré les lauréats d\'une académie',
          source: 'https://www.youtube.com/embed/CZbTjvSRZhM',
-         thumbnail: 'images/vignetteVideo_science4all.jpg'
+         thumbnail: 'images/miniatures_videos/vignetteVideo_science4all.jpg'
       }
    ];
    $scope.videosPreviousContests = [
