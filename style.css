@@ -568,3 +568,57 @@ h3 {
       font-size: 20px;
    }
 }
+
+/*
+*
+* Mobile
+*
+*/
+
+/* Les URL longues (www.apprendre-en-ligne.net/crypto) ne comportent aucun
+   point de césure : dans une colonne étroite elles débordent. */
+.pageContent {
+    overflow-wrap: break-word;
+}
+
+/* Aucune image ne doit dépasser la largeur de son conteneur. Certains logos
+   ont un attribut height= qui les rend plus larges que l'écran sur petit
+   téléphone (arsCryptographica.jpg : 456x80, donc 342px de large à height=60). */
+img {
+    max-width: 100%;
+}
+
+/* Une vidéo ne doit jamais être plus large que l'écran : les iframes YouTube
+   ont une largeur fixe dans le HTML (560px), ce qui provoquait un défilement
+   horizontal sur téléphone. */
+iframe {
+    max-width: 100%;
+}
+
+@media (max-width: 800px) {
+    /* .row compense le padding de .col par des marges négatives de 15px, ce qui
+       la rend 30px plus large que son conteneur. Sans effet sur grand écran,
+       mais sur téléphone cela dépasse de l'écran. Les colonnes étant empilées
+       en dessous de 800px, la compensation n'a plus lieu d'être. */
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Les colonnes sont empilées sur téléphone, mais elles restent flottantes :
+       une float sans largeur se dimensionne sur son contenu, et une URL longue
+       la rend alors plus large que l'écran. En bloc, elle suit son conteneur. */
+    .col {
+        float: none;
+        width: auto;
+        /* 'anywhere' et non 'break-word' : seul le premier est pris en compte
+           dans le calcul de la largeur minimale du contenu, donc seul lui
+           empêche une URL longue de déborder de sa colonne. */
+        overflow-wrap: anywhere;
+    }
+
+    /* Cibles tactiles : 34px de haut, c'est juste pour le doigt. */
+    #menu a {
+        padding: 11px 16px;
+    }
+}
