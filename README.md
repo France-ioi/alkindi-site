@@ -6,6 +6,12 @@ sans PHP. Pour travailler dessus il suffit d'un serveur web local (WAMP, ou
 depuis le disque en `file://`, car le navigateur y bloque le chargement des
 fichiers voisins.
 
+> **Ancienne version du site.** Jusqu'en août 2026, le site était une
+> application AngularJS (`index.html` + `page.js` + des fragments `page*.html`).
+> Elle est conservée telle quelle sur la branche **`ancien-site-angularjs`**,
+> uniquement pour référence — plus rien n'en dépend. La branche `master`
+> contient la version en service.
+
 ## Structure
 
 | Fichier | Page |
