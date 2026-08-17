@@ -1,6 +1,73 @@
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Exo');
+/*
+*
+* Polices
+*
+* Hébergées localement (dossier polices/) plutôt que chargées depuis
+* fonts.googleapis.com : sinon l'adresse IP de chaque visiteur — donc d'élèves
+* mineurs — est transmise à Google à l'ouverture de chaque page, sans
+* consentement. Cela supprime aussi deux connexions à un domaine tiers.
+*
+* Open Sans v44 est une police variable : le même fichier sert les graisses
+* 400 et 700, d'où le src identique dans les deux déclarations.
+*
+* font-display: swap affiche immédiatement le texte dans la police de repli,
+* puis le rebascule une fois la police chargée, plutôt que de le laisser
+* invisible.
+*
+* Seuls les sous-ensembles latin et latin-ext sont embarqués : ils couvrent le
+* français (accents, œ, «», ·) et les noms d'établissements étrangers.
+*
+*/
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('polices/opensans-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('polices/opensans-latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('polices/opensans-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('polices/opensans-latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('polices/exo-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('polices/exo-latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -644,8 +711,11 @@ iframe {
     background-color: #fff;
 }
 .lecteurVideoIcone {
+    /* Triangle SVG plutôt que le caractère U+25B6 : celui-ci n'existe que dans
+       le sous-ensemble « symbols » d'Open Sans (plus de 100 Ko), et s'affiche
+       en émoji coloré sur certains systèmes. */
     color: #ed1846;
-    font-size: 26px;
+    flex: none;
 }
 
 /* Indicateur de focus visible : les vignettes vidéo et le bouton de lecture
