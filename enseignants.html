@@ -1,11 +1,47 @@
-<div id="pageMain" class="pageContent">
-  <div class="defaultText">
-    <h1>Vous êtes enseignant·e et souhaitez inscrire vos classes ?</h1>
-    <div class='section'>
-      <div class="sectionContent">
-        <p>L'organisation est très simple. Vous pouvez à tout moment devenir coordinateur/coordinatrice sur <a href="http://coordinateur.concours-alkindi.fr" target="_blank">coordinateur.concours-alkindi.fr</a>. Vous pouvez inscrire vos élèves à tout moment.</p>
-      </div>
-    </div>
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Enseignants — Concours Alkindi</title>
+   <meta name="description" content="Comment inscrire vos classes au concours Alkindi : devenez coordinateur ou coordinatrice, l'organisation est très simple et gratuite.">
+   <script>
+   if ((window.location.protocol != 'https:') && (window.location.hostname != '127.0.0.1')){
+     try {
+       var xhr = new XMLHttpRequest();
+       xhr.onload = function() {
+         window.location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+       }
+       xhr.open('GET', 'https://static4.castor-informatique.fr/contestAssets/https_test.txt');
+       xhr.send();
+     } catch(e) {}
+   }
+   </script>
+   <link rel="stylesheet" type="text/css" href="style.css?v=2">
+   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+   <script defer src="inc/site.js?v=2"></script>
+</head>
+<body>
 
+<site-header></site-header>
+
+<div class="mainContainer" id="content" role="main">
+  <div class="pageContent">
+    <div class="defaultText">
+      <h1 class="pageTitle">Vous êtes enseignant·e et souhaitez inscrire vos classes&nbsp;?</h1>
+
+      <div class="section">
+        <div class="sectionContent">
+          <p>L'organisation est très simple. Vous pouvez à tout moment devenir coordinateur/coordinatrice sur <a href="https://coordinateur.concours-alkindi.fr" target="_blank">coordinateur.concours-alkindi.fr</a>. Vous pouvez inscrire vos élèves à tout moment.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="clear"></div>
 </div>
 
+<site-footer></site-footer>
+
+</body>
+</html>

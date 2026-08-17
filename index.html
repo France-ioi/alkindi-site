@@ -1,10 +1,49 @@
 <!DOCTYPE html>
-<html lang="fr-FR" ng-app="alkindi">
+<html lang="fr-FR">
 <head>
-   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Concours Alkindi</title>
+   <meta name="description" content="Le concours Alkindi est une compétition de cryptographie gratuite ouverte aux classes de 4e, 3e et 2de, organisée par Animath et France-ioi.">
+   <script>
+   /*
+    * Compatibilité avec les liens de l'ancien site (application AngularJS).
+    *
+    * Les anciennes adresses sont de la forme concours-alkindi.fr/#/pageManual.
+    * Le fragment (#/pageManual) n'est JAMAIS transmis au serveur : aucune règle
+    * de redirection côté serveur ne peut donc le voir. Seul du JavaScript
+    * exécuté dans le navigateur peut le lire, d'où ce bloc — qui doit rester
+    * en ligne et le plus haut possible dans le <head>, afin de rediriger avant
+    * que quoi que ce soit ne s'affiche.
+    *
+    * À conserver au moins deux ou trois ans : favoris, liens de sites
+    * partenaires, résultats de moteurs de recherche.
+    */
+   (function () {
+      var anciennesURLs = {
+         '#/pageManual':       'manuel.html',
+         '#/pagePrevious':     'epreuves-precedentes.html',
+         '#/pageDiscover':     'decouvrir-crypto.html',
+         '#/enseignants':      'enseignants.html',
+         '#/pageWhoAreWe':     'qui-sommes-nous.html',
+         '#/pageBD':           'bd.html',
+         '#/pageInfosLegales': 'infos-legales.html',
+         '#/pageVisits':       'obsolete/pageVisits.html',
+         '#/pageCoordinateur': 'https://coordinateur.concours-alkindi.fr',
+         // Variantes sans barre oblique : l'ancien pied de page pointait
+         // vers #pageInfosLegales.
+         '#pageInfosLegales':  'infos-legales.html',
+         '#pageBD':            'bd.html'
+         // Non listées volontairement : #/infosTour2, #/infosTour2Suisse,
+         // #/infosTour3, #/correctionsTour1. Ces pages n'ont pas été
+         // converties ; leurs liens aboutissent simplement sur l'accueil.
+      };
+      var cible = anciennesURLs[window.location.hash];
+      // replace() plutôt que href : pas d'entrée dans l'historique, donc pas
+      // de boucle si l'internaute revient en arrière.
+      if (cible) { window.location.replace(cible); }
+   })();
+   </script>
    <script>
    if ((window.location.protocol != 'https:') && (window.location.hostname != '127.0.0.1')){
      try {
@@ -17,68 +56,151 @@
      } catch(e) {}
    }
    </script>
-   <link rel="stylesheet" type="text/css" href="banner.css">
-   <link rel="stylesheet" type="text/css" href="registration.css">
-   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" type="text/css" href="style.css?v=2">
    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
-   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-   <script type="text/javascript" SRC="functions.js"></script>
-   <script type="text/javascript" SRC="page.js?v=92"></script>
-   <link rel="stylesheet" type="text/css" href="rebours.css">
-   <script type="text/javascript" src="rebours.js"></script>
-   <!--[if lt IE 9]>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <![endif]-->
+   <script defer src="inc/site.js?v=2"></script>
 </head>
-<body ng-controller="PageCtrl">
-   <header class="header" role="banner">
-      <div class="headerContent">
-         <div class="subHeader">
-            <a href="https://www.facebook.com/concours-alkindi" target="_blank" title="Suivez-nous sur Facebook" class="fr mrm">
-               <img src="images/facebook_black.png" alt="Suivez-nous sur Facebook" height="20px" width="20px">
-            </a>
-            <a href="http://www.twitter.com/ConcoursAlKindi" target="_blank" title="Suivez-nous sur Twitter" class="fr">
-               <img src="images/twitter_black.png" alt="Suivez-nous sur Twitter" height="20px" width="20px">
-            </a>
-         </div>
-         <div class="siteLogo">
-            <div class="siteTitle">
-               <span class="hidden">Concours Alkindi</span>
-               <img src="images/logo.png" alt="Logo Concours Alkindi" />
-            </div>
-         </div>
-         <nav id="menu" role="navigation">
-            <ul ng-controller='activeMenuItem'>
-               <li ng-class="{active: isActive('/')}">
-                  <a href="#/">Accueil</a>
-               </li><li ng-class="{active: isActive('/pageManual')}">
-                  <a href="#/pageManual">Manuel du concours</a>
-               </li><li ng-class="{active: isActive('/pagePrevious')}">
-                  <a href="#/pagePrevious">Les épreuves précédentes</a>
-               </li><li ng-class="{active: isActive('/pageDiscover')}">
-                  <a href="#/pageDiscover">Découvrir la crypto</a>
-               </li><li ng-class="{active: isActive('/enseignants')}">
-                  <a href="#/enseignants">Enseignants</a>
-               </li><li ng-class="{active: isActive('/pageWhoAreWe')}">
-                  <a href="#/pageWhoAreWe">Qui sommes-nous ?</a>
-               </li>
-            </ul>
-         </nav>
-      </div>
-   </header>
+<body>
 
-   <div class="mainContainer" id="content" role="main">
-      <div ng-view autoscroll="true"><!-- the div that display the page content --></div>
-      <div class="clear"></div>
-   </div>
+<site-header></site-header>
 
-   <footer id="footer" role="contentinfo">
-      <div id="copyright">
-         Concours Alkindi par <a href="http://www.animath.fr" target="_blank">Animath</a> et <a href="http://www.france-ioi.org" target="_blank">France-ioi</a> - <a href="#/pageWhoAreWe">Contact</a> - <a href="#/pageWhoAreWe">Presse</a> - <a href="#pageInfosLegales">Informations légales</a>
+<div class="mainContainer" id="content" role="main">
+
+  <div id="homeVisual">
+    <img src="images/affiches/visuel_2025.jpg" alt="Affiche du concours Alkindi" />
+    <div class="mainTeaser">
+      <iframe width="560" height="450" src="https://www.youtube.com/embed/jt_EYiD3rOQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Actualité en une : anciennement chargée depuis actu.html par jQuery. -->
+  <div id="monActu">
+    <ul>
+      Le concours Alkindi 2026-2027 commencera le 7 décembre&nbsp;! Vous pourrez bientôt inscrire vos classes sur <a href="https://coordinateur.concours-alkindi.fr/" target="_blank">coordinateur.concours-alkindi.fr</a>. Retrouvez les détails des dates des différents tours sur le <a href="manuel.html">manuel du concours</a>.
+    </ul>
+  </div>
+
+  <div class="pageContent">
+    <div class="defaultText">
+      <h1 class="pageTitle">Alkindi, c’est quoi&nbsp;?</h1>
+
+      <div class="section">
+        <p class="subtitle">Le concours Alkindi est une compétition de cryptographie ouverte aux classes de 4e, 3e et 2de. Il est organisé par les associations <a href="https://www.animath.fr" target="_blank">Animath</a> et <a href="https://www.france-ioi.org" target="_blank">France-ioi</a>. La participation est entièrement gratuite.</p>
       </div>
-   </footer>
+
+      <div class="section">
+        <h2>Déroulement</h2>
+        <p>Le concours 2026-2027 comporte <strong>deux premiers tours accessibles sans sélection</strong>. Une phase de préparation permet ensuite de se qualifier au <strong>troisième tour</strong>, à l’issue duquel 20 équipes accèdent à la <strong>finale</strong>.</p>
+        <ul>
+          <li>Du lundi 7 décembre au vendredi 22 janvier&nbsp;: le <strong>premier tour</strong> est une épreuve de 45 minutes sur ordinateur ou tablette, à laquelle on peut participer seul·e ou en binôme, sous la surveillance d'un·e enseignant·e. Il s’agit d’une série de problèmes interactifs pour découvrir divers aspects de la cryptanalyse. Les épreuves des années précédentes peuvent être testées sur <a href="https://epreuve.concours-alkindi.fr/">epreuve.concours-alkindi.fr</a>.</li>
+          <li>Du lundi 1er février au vendredi 26 février&nbsp;: le <strong>deuxième tour</strong> est une épreuve au même format que le 1er tour mais avec seulement trois sujets plus longs que ceux du 1er tour.</li>
+          <li>Du lundi 1er mars au vendredi 9 avril&nbsp;: une <strong>phase de préparation et qualification au troisième tour</strong> à faire en classe et/ou à la maison sur les sujets du 3e tour. Pendant cette phase, les élèves forment des équipes qui doivent atteindre un seuil de points prédéterminé pour se qualifier au 3e tour.</li>
+          <li>Du lundi 22 mars au vendredi 9 avril&nbsp;: le <strong>troisième tour</strong> est une épreuve constituée des mêmes sujets que la phase de préparation, mais à résoudre avec de nouvelles données et en une heure et demie, par équipes et sous la surveillance d'un·e enseignant·e. Seule cette épreuve compte pour la sélection en finale.</li>
+          <li>Le mercredi 12 mai&nbsp;: la <strong>finale</strong> est une épreuve de 2 heures. Les sujets des années précédentes sont disponibles <a href="epreuves-precedentes.html">sur cette page</a>. Les élèves assisteront à des ateliers de cryptographie donnés par des chercheurs, avant la cérémonie de clôture, lors de laquelle les résultats seront annoncés, avec la participation de nos différents partenaires.</li>
+        </ul>
+        <p>
+          Pour plus de détails sur le déroulement des tours, consultez le <a href="manuel.html">manuel du concours</a>.
+        </p>
+
+        <h3>Vous êtes enseignant·e et souhaitez inscrire vos classes&nbsp;?</h3>
+        <p>L'organisation est très simple. Vous pouvez à tout moment devenir coordinateur/coordinatrice sur <a href="https://coordinateur.concours-alkindi.fr">coordinateur.concours-alkindi.fr</a> et inscrire vos élèves.</p>
+
+        <h3>Vous êtes élève en 4e, 3e ou 2nde&nbsp;?</h3>
+        <p>L'inscription doit passer par un·e enseignant·e de votre établissement. Parlez du concours à vos enseignant·e·s et transmettez-leur l'adresse <a href="https://concours-alkindi.fr">concours-alkindi.fr</a>.</p>
+      </div>
+
+      <div class="section">
+        <h2>Objectifs</h2>
+        <p>La sécurité des données numériques et de leur transmission est un des enjeux majeurs de notre société, que ce soit pour sécuriser les transactions bancaires ou garantir la protection de la vie privée. L'objectif du concours est de montrer aux élèves que les mathématiques et l’informatique permettent de comprendre les outils utilisés dans ce domaine.</p>
+        <p>Nous souhaitons faire découvrir aux élèves cette application très concrète des mathématiques, qui joue un rôle fondamental dans leur vie quotidienne. Nous voulons les faire réfléchir, de façon ludique, aux fondements mathématiques, informatiques et logiques de la cryptanalyse. Enfin, nous souhaitons les sensibiliser à la question importante de la sécurité de l’information.</p>
+        <p>Ce concours rentre dans le cadre de la Stratégie mathématiques et du plan École numérique du Ministère de l’Éducation nationale.</p>
+      </div>
+
+      <div class="section">
+        <h2>Qui peut participer&nbsp;?</h2>
+        <p class="subtitle">Tou·te·s les élèves scolarisé·e·s en 4e, 3e ou 2de dans un établissement français.</p>
+        <p class="subtitle">Les élèves d'autres classes peuvent faire les épreuves des deux premiers tours.</p>
+        <div class="row">
+          <div class="col one-half">
+            <h3>Je n'ai jamais fait de crypto. C'est grave&nbsp;?</h3>
+            <p>Pas du tout. Au contraire, c’est le principe&nbsp;! Ce concours s’adresse à des personnes qui n’ont jamais fait de cryptanalyse. Lors des épreuves en temps limité, toutes les informations nécessaires seront contenues dans le sujet.</p>
+          </div>
+          <div class="col one-half">
+            <h3 class="txtright">Est ce que c'est difficile&nbsp;?</h3>
+            <p>Le concours est accessible à tou·te·s les élèves de quatrième, troisième et seconde. Lors de la première épreuve, ouverte à tou·te·s, chaque question comporte trois versions de difficulté croissante. Ainsi, chaque participant·e peut s’amuser à résoudre des défis adaptés à son niveau et découvrir les principes de base de la cryptographie. Pour le deuxième tour, il s'agit aussi surtout de faire preuve de persévérance et de bien travailler en équipe.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col one-half">
+            <h3>Mais il faut quand même être bon en maths&nbsp;?</h3>
+            <p>Pas nécessairement, certains problèmes font appel à certaines notions de fin de collège, mais les mathématiques ne sont pas la principale difficulté.</p>
+          </div>
+          <div class="col one-half">
+            <h3 class="txtright">Alors qu’est-ce qu’il faut savoir&nbsp;?</h3>
+            <p>Il n’y a pas de prérequis autres que le programme de collège. Venez avec l’esprit ouvert, faites preuve de logique et suivez les consignes. Et surtout amusez vous&nbsp;!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Qu'est ce qu’on gagne&nbsp;?</h2>
+        <p>Nous offrons à chaque membre des trois meilleures équipes nationales un kit Raspberry Pi ou Arduino (en fonction des stocks disponibles) accompagné de capteurs et actionneurs, dans l'objectif d'encourager les gagnants à l'apprentissage de la programmation.</p>
+        <p>Les autres équipes finalistes gagneront un livre sur les thèmes de la cryptographie, de l'informatique et des mathématiques.</p>
+      </div>
+
+      <div class="section">
+        <h2>Sponsors et partenaires</h2>
+        <p class="txtcenter">
+          <img class="mrl mtml" src="images/logo_soutien.png" alt="DGSE" height="100" style="vertical-align:middle">
+          <img class="mrl mtml" src="images/2020_logo_menjs.jpg" alt="education-nationale" height="100" style="vertical-align:middle">
+          <img class="mrl mtml" src="images/logo_inria_rouge.png" alt="inria" width="150" style="vertical-align:middle">
+        </p>
+        <p class="txtcenter mtl">En apprendre plus sur les <a href="qui-sommes-nous.html">organisateurs, sponsors et partenaires du concours Alkindi.</a></p>
+      </div>
+
+      <div class="section" id="affiche">
+        <h2>L'affiche</h2>
+        <p>Pour faire connaître le concours dans votre établissement, n'hésitez pas à imprimer et diffuser notre affiche&nbsp;!
+          L'affiche de l'édition précédente 2025-2026 est téléchargeable <a target="_blank" href="affiches/affiche-alkindi-2025-A4.pdf">ici</a>. Vous trouverez bientôt l'affiche de la prochaine édition et vous pouvez dès à présent retrouver les affiches des éditions précédentes dans la rubrique <a href="epreuves-precedentes.html">épreuves précédentes</a>.</p>
+        <p style="clear:both">Vous pouvez également relire la <a href="bd.html">bande dessinée</a> associée au concours.</p>
+      </div>
+
+      <div class="section">
+        <h2>Vidéos</h2>
+        <div class="videos">
+          <ul class="videosList">
+            <li data-video="https://www.youtube.com/embed/f_y6mJPvlIA">
+              <img src="images/miniatures_videos/vignetteVideo_lancement.jpg" alt="">
+              <div>Lancement de la 3e édition du concours Alkindi</div>
+            </li>
+            <li data-video="https://www.youtube.com/embed/ioxT4H7Kx6M">
+              <img src="images/miniatures_videos/vignetteVideo_participants.jpg" alt="">
+              <div>Témoignages de participants au 1er tour du concours 2017-2018</div>
+            </li>
+            <li data-video="https://www.youtube.com/embed/EVLHEOWAORc">
+              <img src="images/miniatures_videos/vignetteVideo_visites.jpg" alt="">
+              <div>Visite d'un laboratoire de cryptographie par des équipes du concours</div>
+            </li>
+            <li data-video="https://www.youtube.com/embed/CZbTjvSRZhM">
+              <img src="images/miniatures_videos/vignetteVideo_science4all.jpg" alt="">
+              <div>Lê, auteur de la chaîne Youtube Science4all, a rencontré les lauréats d'une académie</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Qui était Al Kindi&nbsp;?</h2>
+        <p>Al Kindi est un savant arabe du IXe siècle qui s'est intéressé à de nombreuses sciences, allant de la géométrie à la médecine et à la chimie. Dans le «&nbsp;Manuscrit sur le chiffrement des messages cryptographiques&nbsp;», il explique comment casser les meilleurs codes connus à son époque, à l'aide de la technique de l'analyse de fréquence. C'est la première trace connue de cryptanalyse. Par conséquent, il est considéré comme l'un des fondateurs de la discipline.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="clear"></div>
+</div>
+
+<site-footer></site-footer>
+
 </body>
 </html>
