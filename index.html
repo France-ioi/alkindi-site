@@ -5,6 +5,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Concours Alkindi</title>
    <meta name="description" content="Le concours Alkindi est une compétition de cryptographie gratuite ouverte aux classes de 4e, 3e et 2de, organisée par Animath et France-ioi.">
+   <meta property="og:type" content="website">
+   <meta property="og:site_name" content="Concours Alkindi">
+   <meta property="og:locale" content="fr_FR">
+   <meta property="og:title" content="Concours Alkindi">
+   <meta property="og:description" content="Le concours Alkindi est une compétition de cryptographie gratuite ouverte aux classes de 4e, 3e et 2de, organisée par Animath et France-ioi.">
+   <meta property="og:url" content="https://concours-alkindi.fr/">
+   <meta property="og:image" content="https://concours-alkindi.fr/images/affiches/visuel_2025.jpg">
+   <meta name="twitter:card" content="summary_large_image">
    <script>
    /*
     * Compatibilité avec les liens de l'ancien site (application AngularJS).
@@ -56,9 +64,9 @@
      } catch(e) {}
    }
    </script>
-   <link rel="stylesheet" type="text/css" href="style.css?v=7">
+   <link rel="stylesheet" type="text/css" href="style.css?v=8">
    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-   <script defer src="inc/site.js?v=7"></script>
+   <script defer src="inc/site.js?v=8"></script>
 </head>
 <body>
 
@@ -69,7 +77,13 @@
   <div id="homeVisual">
     <img src="images/affiches/visuel_2025.jpg" alt="Affiche du concours Alkindi" />
     <div class="mainTeaser">
-      <iframe width="560" height="450" src="https://www.youtube.com/embed/jt_EYiD3rOQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- La vidéo n'est chargée qu'au clic (voir initTeaser dans inc/site.js) :
+           rien n'est demandé à YouTube tant que l'internaute ne le demande pas. -->
+      <button type="button" class="lecteurVideo"
+              data-video="https://www.youtube.com/embed/jt_EYiD3rOQ?rel=0&amp;autoplay=1">
+        <span class="lecteurVideoIcone" aria-hidden="true">▶</span>
+        Voir la vidéo de présentation
+      </button>
     </div>
   </div>
 

@@ -117,16 +117,59 @@ function openVideo(li) {
 
 function initVideos() {
    document.querySelectorAll('.videosList li[data-video]').forEach(function (li) {
+      /*
+       * Les vignettes sont des <li> : sans cela, elles ne réagissent qu'à la
+       * souris et restent inatteignables au clavier. On les annonce comme des
+       * boutons et on les rend focalisables.
+       */
+      li.setAttribute('role', 'button');
+      li.setAttribute('tabindex', '0');
+
       li.addEventListener('click', function () {
          if (li.classList.contains('active')) { return; }
          li.parentNode.querySelectorAll('li.active').forEach(closeVideo);
          openVideo(li);
       });
+
+      li.addEventListener('keydown', function (e) {
+         if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
+            e.preventDefault();   // sinon la barre d'espace fait défiler la page
+            li.click();
+         }
+      });
    });
 }
 
-if (document.readyState === 'loading') {
-   document.addEventListener('DOMContentLoaded', initVideos);
-} else {
+/*
+ * Vidéo de présentation de l'accueil : elle n'est chargée qu'au clic.
+ * Auparavant l'iframe YouTube était présente dès l'ouverture de la page, ce qui
+ * téléchargeait plusieurs centaines de kilooctets et déposait des cookies tiers
+ * avant toute action de l'internaute.
+ */
+function initTeaser() {
+   var bouton = document.querySelector('.mainTeaser button[data-video]');
+   if (!bouton) { return; }
+
+   bouton.addEventListener('click', function () {
+      var frame = document.createElement('iframe');
+      frame.width = 560;
+      frame.height = 450;
+      frame.setAttribute('frameborder', '0');
+      frame.setAttribute('allowfullscreen', '');
+      frame.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
+      frame.src = bouton.dataset.video;
+      bouton.parentNode.replaceChild(frame, bouton);
+      frame.focus();
+   });
+}
+
+function initSite() {
    initVideos();
+   initTeaser();
+}
+
+if (document.readyState === 'loading') {
+   document.addEventListener('DOMContentLoaded', initSite);
+} else {
+   initSite();
 }
