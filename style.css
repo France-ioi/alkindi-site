@@ -684,38 +684,61 @@ iframe {
         overflow-wrap: anywhere;
     }
 
+    /* Sur petit écran la vignette rétrécit : la pastille doit suivre. */
+    .lecteurVideoJouer {
+        font-size: 14px;
+        padding: 10px 14px;
+        gap: 7px;
+    }
+
     /* Cibles tactiles : 34px de haut, c'est juste pour le doigt. */
     #menu a {
         padding: 11px 16px;
     }
 }
 
-/* Bouton de lecture de la vidéo de présentation, superposé au visuel d'accueil.
-   L'iframe YouTube ne le remplace qu'au clic. */
+/* Aperçu cliquable de la vidéo de présentation, superposé au visuel d'accueil.
+   L'iframe YouTube ne remplace la vignette qu'au clic. */
 .lecteurVideo {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    padding: 16px 28px;
+    position: relative;
+    display: block;
+    max-width: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+    line-height: 0;          /* supprime l'espace sous l'image */
+    cursor: pointer;
+}
+.lecteurVideo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
     border: 2px solid #ed1846;
     border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Pastille « lecture » centrée sur la vignette. */
+.lecteurVideoJouer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 90%;
+    padding: 14px 24px;
+    border-radius: 6px;
     background-color: rgba(255, 255, 255, 0.92);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
     color: #000;
     font-family: inherit;
     font-size: 18px;
     line-height: 1.2;
-    cursor: pointer;
+    white-space: nowrap;
 }
-.lecteurVideo:hover {
+.lecteurVideo:hover .lecteurVideoJouer {
     background-color: #fff;
-}
-.lecteurVideoIcone {
-    /* Triangle SVG plutôt que le caractère U+25B6 : celui-ci n'existe que dans
-       le sous-ensemble « symbols » d'Open Sans (plus de 100 Ko), et s'affiche
-       en émoji coloré sur certains systèmes. */
-    color: #ed1846;
-    flex: none;
 }
 
 /* Indicateur de focus visible : les vignettes vidéo et le bouton de lecture

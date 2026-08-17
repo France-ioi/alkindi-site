@@ -152,8 +152,10 @@ function initTeaser() {
 
    bouton.addEventListener('click', function () {
       var frame = document.createElement('iframe');
-      frame.width = 560;
-      frame.height = 450;
+      // Mêmes dimensions que la vignette (600x338, 16/9) : le lecteur prend
+      // exactement sa place, sans saut de mise en page au clic.
+      frame.width = 600;
+      frame.height = 338;
       frame.setAttribute('frameborder', '0');
       frame.setAttribute('allowfullscreen', '');
       frame.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
