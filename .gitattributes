@@ -1,0 +1,22 @@
+# Fins de ligne
+#
+# Sans ce fichier, le traitement des fins de ligne dépend du réglage
+# core.autocrlf de chaque poste. Un fichier enregistré en CRLF par les uns et
+# en LF par les autres apparaît alors comme entièrement modifié au moindre
+# changement d'une seule ligne, ce qui rend les diffs illisibles et les
+# conflits ingérables.
+#
+# text=auto : git détecte seul ce qui est du texte, le stocke toujours en LF
+# dans le dépôt, et le restitue dans la convention locale à chaque checkout.
+# Ce fichier étant versionné, la règle s'applique à tout le monde sans
+# configuration — y compris aux envois faits depuis l'interface web de GitHub.
+
+* text=auto
+
+# Binaires : ne jamais convertir, sous peine de corrompre le fichier.
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
